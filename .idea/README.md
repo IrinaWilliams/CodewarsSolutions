@@ -1,5 +1,5 @@
 * https://www.codewars.com/kata/59dd3ccdded72fc78b000b25
-'''javascript
+```javascript
 function whatday(num) { 
 const obj = { 
 1: 'Sunday', 
