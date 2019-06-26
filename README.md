@@ -1,3 +1,9 @@
+*https://www.codewars.com/kata/remove-string-spaces/train/javascript
+```javascript
+function noSpace(x){
+return  x.replace (/\s/g, '');
+}
+
 *https://www.codewars.com/kata/random-case/train/javascript
 ```javascript
 function randomCase(x) {
