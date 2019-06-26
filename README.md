@@ -1,3 +1,10 @@
+```javascript
+let str = 'Alice';
+function charToCap(str) {
+  return str.replace(str[2], str[2].toUpperCase()); 
+}
+console.log(charToCap(str));
+
 *https://www.codewars.com/kata/5168bb5dfe9a00b126000018
 ```javascript
 function solution(str){
