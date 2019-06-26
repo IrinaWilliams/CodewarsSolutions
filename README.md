@@ -1,3 +1,13 @@
+*https://www.codewars.com/kata/5a00e05cc374cb34d100000d
+```javascript
+function reverseSeq(n) {
+let backNum = [];
+  for(let i = n; i > 0; i--) {
+    backNum.push(i);
+  } 
+  return backNum;
+}
+
 ```javascript
 let str = 'Alice';
 function charToCap(str) {
