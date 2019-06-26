@@ -1,3 +1,9 @@
+*https://www.codewars.com/kata/you-cant-code-under-pressure-number-1/train/javascript
+```javascript
+function doubleInteger(i) {
+  return i * 2;
+}
+
 *https://www.codewars.com/kata/remove-string-spaces/train/javascript
 ```javascript
 function noSpace(x){
