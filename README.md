@@ -1,3 +1,10 @@
+*https://www.codewars.com/kata/convert-a-number-to-a-string/train/javascript
+```javascript
+function numberToString(num) {
+  let str = num.toString();
+  return str;
+}
+
 *https://www.codewars.com/kata/572b77262bedd351e9000076
 ```javascript
 function first(arr, n =1) {
