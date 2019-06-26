@@ -1,8 +1,26 @@
+*https://www.codewars.com/kata/514b92a657cdc65150000006
+```javascript
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in.
+
+My solution: 
+
+function solution(number) {
+  let sum = 0;
+  for (let i = 3; i < number; i++) {
+    if (i % 3 === 0 || i % 5 === 0) { sum += i; }
+  }
+  return sum;  
+}
+
 *https://www.codewars.com/kata/5a2be17aee1aaefe2a000151
 ```javascript
 I'm new to coding and now I want to get the sum of two arrays...actually the sum of all their elements. I'll appreciate for your help.
 
 P.S. Each array includes only integer numbers. Output is a number too.
+
+My solution: 
 
 function arrayPlusArray(arr1, arr2) {
   let sum = 0;
@@ -14,7 +32,6 @@ function arrayPlusArray(arr1, arr2) {
   for(let i = 0; i < arr2.length; i++) {
     sum += arr2[i];
   }
-  
   return sum;
 }
 
@@ -30,7 +47,8 @@ You are given 5 variables: sharkDistance = distance the shark needs to cover to 
 
 If you make it, return "Alive!", if not, return "Shark Bait!".
 
-Solution
+My solution: 
+
 function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
 return pontoonDistance/youSpeed < (sharkDistance/ (sharkSpeed/2)) ? "Alive!" : "Shark Bait!";
 } 
