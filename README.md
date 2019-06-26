@@ -1,13 +1,26 @@
+*https://www.codewars.com/kata/572b77262bedd351e9000076
+```javascript
+My solution:
+
+function first(arr, n =1) {
+  let array = [];
+    if ( n> arr.length) return arr;
+      for (let i=0; i < n; i++){
+        array.push(arr[i]);
+      }
+  return array
+}
+
 *https://www.codewars.com/kata/58bf9bd943fadb2a980000a7
 ```javascript
 
 My solution:
 function whoIsPaying(name){
   let arr = [name];
-  if (name.length > 2){
-  let str = name.substring (0, 2);
-  arr.push(str);
-  }
+    if (name.length > 2){
+      let str = name.substring (0, 2);
+        arr.push(str);
+    }
   return arr;
 }
 
@@ -21,8 +34,8 @@ My solution:
 
 function solution(number) {
   let sum = 0;
-  for (let i = 3; i < number; i++) {
-    if (i % 3 === 0 || i % 5 === 0) { sum += i; }
+    for (let i = 3; i < number; i++) {
+      if (i % 3 === 0 || i % 5 === 0) { sum += i; }
   }
   return sum;  
 }
