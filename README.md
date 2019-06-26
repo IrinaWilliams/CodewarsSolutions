@@ -1,11 +1,9 @@
 *https://www.codewars.com/kata/random-case/train/javascript
 ```javascript
 function randomCase(x) {
-  x = x.toLowerCase();
-    for (let i = 1; i < x.length; i++) {
-    x = x.replace(x[i], x[i].toUpperCase());
-    }
-    return x;
+  return x.split('').map(function(char) {
+    return Math.random() > 0.5 ? char.toUpperCase() : char.toLowerCase();
+    }).join('');
 }
 
 *https://www.codewars.com/kata/5a00e05cc374cb34d100000d
