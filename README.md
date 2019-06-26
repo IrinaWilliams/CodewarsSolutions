@@ -1,3 +1,16 @@
+*https://www.codewars.com/kata/58bf9bd943fadb2a980000a7
+```javascript
+
+My solution:
+function whoIsPaying(name){
+  let arr = [name];
+  if (name.length > 2){
+  let str = name.substring (0, 2);
+  arr.push(str);
+  }
+  return arr;
+}
+
 *https://www.codewars.com/kata/514b92a657cdc65150000006
 ```javascript
 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
