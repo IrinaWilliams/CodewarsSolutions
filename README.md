@@ -1,3 +1,17 @@
+*https://www.codewars.com/kata/5168bb5dfe9a00b126000018
+```javascript
+function solution(str){
+  let backWord = '';
+    for(let i = str.length-1; i >= 0; i--) {
+    backWord += str[i];
+    }
+    return backWord;
+}
+
+function solution(str){
+  return str.split('').reverse().join('');  
+}
+
 *https://www.codewars.com/kata/convert-a-number-to-a-string/train/javascript
 ```javascript
 function numberToString(num) {
@@ -9,7 +23,7 @@ function numberToString(num) {
 ```javascript
 function first(arr, n =1) {
   let array = [];
-    if ( n> arr.length) return arr;
+    if ( n > arr.length) return arr;
       for (let i=0; i < n; i++){
         array.push(arr[i]);
       }
