@@ -1,3 +1,23 @@
+*https://www.codewars.com/kata/5a2be17aee1aaefe2a000151
+```javascript
+I'm new to coding and now I want to get the sum of two arrays...actually the sum of all their elements. I'll appreciate for your help.
+
+P.S. Each array includes only integer numbers. Output is a number too.
+
+function arrayPlusArray(arr1, arr2) {
+  let sum = 0;
+  
+  for(let i = 0; i < arr1.length; i++) {
+    sum += arr1[i];
+  }
+  
+  for(let i = 0; i < arr2.length; i++) {
+    sum += arr2[i];
+  }
+  
+  return sum;
+}
+
 *https://www.codewars.com/kata//57e921d8b36340f1fd000059
 ```javascript
 Your friend invites you out to a cool floating pontoon around 1km off the beach. Among other things, the pontoon has a huge slide that drops you out right into the ocean, a small way from a set of stairs used to climb out.
