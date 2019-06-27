@@ -1,3 +1,20 @@
+*https://www.codewars.com/kata/find-the-calculation-type/train/javascript
+```javascript
+function calcType(a, b, res) {
+  if(a + b === res) {
+  return 'addition';
+  }
+  if(a - b === res) {
+  return 'subtraction';
+  }
+  if(a * b === res) {
+  return 'multiplication';
+  }
+  if(a / b === res) {
+  return 'division';
+  }
+}
+
 *https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 ```javascript
 function stringToArray(string){
