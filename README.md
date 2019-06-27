@@ -1,3 +1,9 @@
+*https://www.codewars.com/kata/57cfdf34902f6ba3d300001e/train/javascript
+```javascript
+function twoSort(s) {
+return s.sort().slice(0,1)[0].split("").reduce((x,y,z) => x + "***" + y);
+}
+
 *https://www.codewars.com/kata/the-feast-of-many-beasts/train/javascript
 ```javascript
 function feast(beast, dish) {
