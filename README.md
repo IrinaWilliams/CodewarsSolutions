@@ -1,3 +1,12 @@
+*https://www.codewars.com/kata/simple-beads-count/train/javascript
+```javascript
+function countRedBeads(n) {
+   if (n < 2) {
+     return 0;
+   }
+   return (n - 1) * 2;
+}
+
 *https://www.codewars.com/kata/numerical-palindrome-number-1/train/javascript
 ```javascript
 function palindrome(num) {
