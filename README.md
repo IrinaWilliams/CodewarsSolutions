@@ -1,6 +1,11 @@
+*https://www.codewars.com/kata/convert-boolean-values-to-strings-yes-or-no/train/javascript
+```javascript
+function boolToWord( bool ){
+  return bool === true ? 'Yes' : 'No';
+}
+
 *https://www.codewars.com/kata/reverse-a-number/train/javascript
 ```javascript
-
 function reverseNumber(n) {
    if ( n >= 0 ){
    let arr = n.toString().split('').reverse();
