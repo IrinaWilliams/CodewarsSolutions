@@ -1,3 +1,10 @@
+*https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
+```javascript
+function stringToArray(string){
+  let s = string.split(' ');
+    return s;
+}
+
 *https://www.codewars.com/kata/simple-beads-count/train/javascript
 ```javascript
 function countRedBeads(n) {
