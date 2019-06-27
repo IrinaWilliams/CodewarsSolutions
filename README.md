@@ -1,3 +1,17 @@
+*https://www.codewars.com/kata/reverse-a-number/train/javascript
+```javascript
+
+function reverseNumber(n) {
+   if ( n >= 0 ){
+   let arr = n.toString().split('').reverse();
+    return +(arr.join(''))}
+    else {
+     n = n * (-1);
+    let arr = n.toString().split('').reverse();
+    return (-1) * (+(arr.join('')))
+    }
+}
+
 *https://www.codewars.com/kata/find-the-calculation-type/train/javascript
 ```javascript
 function calcType(a, b, res) {
