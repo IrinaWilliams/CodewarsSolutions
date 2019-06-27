@@ -1,8 +1,33 @@
+*https://www.codewars.com/kata/numerical-palindrome-number-1/train/javascript
+```javascript
+function palindrome(num) {
+let str = "";
+    if (typeof num !== 'number' || num < 0) {
+      return "Not valid";
+    }
+      str = num + '';
+    for (let i = 0; i < Math.floor(str.length / 2); i++) {
+      if (str[i] !== str[str.length - i - 1]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+function palindrome(num) { 
+if(typeof num !== 'number' || num < 0){
+  return 'Not valid';
+  }
+  const arr = +(num.toString().split('').reverse().join(''));
+  return arr === num;
+}
+
+
 *https://www.codewars.com/kata/57cfdf34902f6ba3d300001e/train/javascript
 ```javascript
 function twoSort(s) {
 return s.sort().slice(0,1)[0].split("").reduce((x,y,z) => x + "***" + y);
-}
+}   
 
 *https://www.codewars.com/kata/the-feast-of-many-beasts/train/javascript
 ```javascript
