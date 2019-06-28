@@ -1,3 +1,19 @@
+*https://www.codewars.com/kata/reverse-list-order/train/javascript
+```javascript
+function reverseList(list) {
+  let arr = [];
+    for(let i = list.length - 1; i >= 0; i--) {
+    arr.push(list[i]);
+    }
+    return arr;
+}
+
+*https://www.codewars.com/kata/simple-multiplication/train/javascript
+```javascript
+function simpleMultiplication(number) {
+  return number % 2 === 0 ? number * 8 : number * 9;
+}
+
 *https://www.codewars.com/kata/convert-boolean-values-to-strings-yes-or-no/train/javascript
 ```javascript
 function boolToWord( bool ){
