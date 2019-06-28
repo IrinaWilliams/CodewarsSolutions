@@ -10,13 +10,13 @@ function switchItUp(number){
     case 5: return 'Five';
     case 6: return 'Six';
     case 7: return 'Seven';
-    case 8: return 'Eigth';
+    case 8: return 'Eight';
     case 9: return 'Nine';
   }
 }
 
   function switchItUp(number){
-    let arr = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eigth','Nine'];
+    let arr = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight','Nine'];
       return arr[number];
   }
 
