@@ -1,3 +1,14 @@
+*https://www.codewars.com/kata/palindrome-strings/train/javascript
+```javascript
+function isPalindrome(line) {
+  let line1 = line.toString();
+  let backLine = '';
+    for(let i = line1.length - 1; i >= 0; i--) {
+      backLine += line1[i];
+    }
+  return backLine === line1 ? true : false;
+}
+
 *https://www.codewars.com/kata/switch-slash-case-bug-fixing-number-6/train/javascript
 ```javascript
 function evalObject(value){
