@@ -347,3 +347,8 @@ function isPalindrome(line) {
   return (line.toString() == line.toString().split('').reverse().join(''));
 }
 ```
+*new solution
+function isPalindrome(line) {
+  return (line.toString() == line.toString().split('').reverse().join(''));
+}
+```
