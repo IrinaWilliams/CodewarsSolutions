@@ -359,3 +359,9 @@ Sleigh.prototype.authenticate = function(name, password) {
   return this.name == name &&  this.password == password;
 };
 ```
+*https://www.codewars.com/kata/type-of-sum/train/javascript
+```javascript
+function typeOfSum(a, b) {
+  return typeof (a + b);
+}
+```
