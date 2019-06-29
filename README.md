@@ -39,8 +39,12 @@ function isPalindrome(line) {
     }
   return backLine === line1 ? true : false;
 }
-```
 
+*new solution
+function isPalindrome(line) {
+  return (line.toString() == line.toString().split('').reverse().join(''));
+}
+```
 *https://www.codewars.com/kata/switch-slash-case-bug-fixing-number-6/train/javascript
 ```javascript
 function evalObject(value){
@@ -339,3 +343,6 @@ const obj = {
 }
 ```
 *new solution
+function isPalindrome(line) {
+  return (line.toString() == line.toString().split('').reverse().join(''));
+}
