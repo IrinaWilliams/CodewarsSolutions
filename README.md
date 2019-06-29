@@ -1,3 +1,14 @@
+*https://www.codewars.com/kata/5b077ebdaf15be5c7f000077
+```javascript
+let countSheep = function (num){
+   let allSheep = '';
+
+   for (let i = 1; i <= num; i++) {
+    allSheep = allSheep + (i + ' sheep...')
+   }
+    return allSheep
+}
+
 *https://www.codewars.com/kata/third-angle-of-a-triangle/train/javascript
 ```javascript
 function otherAngle(a, b) {
