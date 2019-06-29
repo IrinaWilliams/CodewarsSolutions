@@ -279,7 +279,7 @@ function first(arr, n =1) {
       }
   return array
 }
-
+```
 *https://www.codewars.com/kata/58bf9bd943fadb2a980000a7
 ```javascript
 function whoIsPaying(name){
@@ -290,7 +290,7 @@ function whoIsPaying(name){
     }
   return arr;
 }
-
+```
 *https://www.codewars.com/kata/514b92a657cdc65150000006
 ```javascript
 function solution(number) {
@@ -300,7 +300,7 @@ function solution(number) {
   }
   return sum;  
 }
-
+```
 *https://www.codewars.com/kata/5a2be17aee1aaefe2a000151
 ```javascript
 function arrayPlusArray(arr1, arr2) {
@@ -315,13 +315,13 @@ function arrayPlusArray(arr1, arr2) {
   }
   return sum;
 }
-
+```
 *https://www.codewars.com/kata//57e921d8b36340f1fd000059
 ```javascript
 function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
 return pontoonDistance/youSpeed < (sharkDistance/ (sharkSpeed/2)) ? "Alive!" : "Shark Bait!";
 } 
-
+```
 * https://www.codewars.com/kata/59dd3ccdded72fc78b000b25
 
 ```javascript
@@ -337,3 +337,4 @@ const obj = {
 };
  return num > 7 || num === 0 ? 'Wrong, please enter a number between 1 and 7' : obj[num];
 }
+```
