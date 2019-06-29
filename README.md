@@ -338,3 +338,4 @@ const obj = {
  return num > 7 || num === 0 ? 'Wrong, please enter a number between 1 and 7' : obj[num];
 }
 ```
+*new solution
