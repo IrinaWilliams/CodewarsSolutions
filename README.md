@@ -1,3 +1,16 @@
+*https://www.codewars.com/kata/youre-a-square/train/javascript
+```javascript
+var isSquare = function(n){
+  if (n < 0)
+  return false; 
+  
+  for (var idx = 0; idx*idx <= n; idx++) {
+  if (idx*idx === n)
+  return true;
+  }
+  return false; 
+}
+
 *https://www.codewars.com/kata/palindrome-strings/train/javascript
 ```javascript
 function isPalindrome(line) {
