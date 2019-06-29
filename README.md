@@ -365,3 +365,11 @@ function typeOfSum(a, b) {
   return typeof (a + b);
 }
 ```
+*https://www.codewars.com/kata/random-case/train/javascript
+```javascript
+function randomCase(x) {
+  return x.split('').map(function(char) {
+    return Math.random() > 0.5 ? char.toUpperCase() : char.toLowerCase();
+  }).join('');
+}
+```
