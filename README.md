@@ -416,3 +416,17 @@ function averageString(str) {
   return n[avg];
 }
 ```
+*https://www.codewars.com/kata/random-case/train/javascript
+```javascript
+ function randomCase(x) {
+  let xNew = '';
+  for(let i = 0; i < x.length; i++){
+    if(Math.round(Math.random()) > 0){
+      xNew = xNew + x[i].toUpperCase();
+    } else {
+      xNew = xNew + x[i].toLowerCase();
+    }
+  }
+  return xNew;
+}
+```
