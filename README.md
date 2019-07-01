@@ -497,4 +497,8 @@ function distinct(a) {
   return res;
 }
 ```
+*https://www.codewars.com/kata/write-shortest-function-to-calculate-average-number-of-array/train/javascript 
+```javascript
+const avg=a=>a.reduce((a,b)=>a+b)/a.length;
+```
 
