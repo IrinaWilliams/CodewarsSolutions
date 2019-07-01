@@ -459,3 +459,9 @@ function arraysSimilar(arr1, arr2) {
   return true;
 }
 ```
+*https://www.codewars.com/kata/arrays-similar/train/javascript
+```javascript
+function arraysSimilar(arr1, arr2) { 
+  return JSON.stringify(arr1.sort()) === JSON.stringify(arr2.sort());
+}
+```
