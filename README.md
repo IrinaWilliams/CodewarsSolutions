@@ -501,4 +501,19 @@ function distinct(a) {
 ```javascript
 const avg=a=>a.reduce((a,b)=>a+b)/a.length;
 ```
+*https://www.codewars.com/kata/valid-parentheses/train/javascript
+```javascript
+function validParentheses(parens) {
+  let arr = parens.split('');
+  let cnt = 0;
+  
+  for (let i = 0; i < parens.length; i++) {
+    if (arr[i] === '(') cnt++;
+    else if (arr[i] === ')') cnt--;
+    if (cnt < 0) return false;
+  }
+  if (cnt === 0) return true;
+  else return false;
+}
+```
 
