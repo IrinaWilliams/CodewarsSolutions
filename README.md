@@ -482,4 +482,19 @@ function distinct(a) {
   return [...new Set(a)];
 }
 ```
+*https://www.codewars.com/kata/remove-duplicates-from-list/train/javascript
+```javascript
+function distinct(a) {
+  const items = {};
+  const res = [];
+  
+  for(let i = 0; i < a.length; i++) {
+    if(!items[a[i]]) {
+    res.push(a[i]);
+    items[a[i]] = true;
+    } 
+  }
+  return res;
+}
+```
 
