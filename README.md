@@ -476,3 +476,10 @@ let sum = 0;
   return sum;
 }
 ```
+*https://www.codewars.com/kata/remove-duplicates-from-list/train/javascript
+```javascript
+function distinct(a) {
+  return [...new Set(a)];
+}
+```
+
