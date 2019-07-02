@@ -526,4 +526,5 @@ function spongeMeme(sentence) {
   return res;
 }
 ```
+*new solution
 
