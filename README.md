@@ -576,5 +576,12 @@ const rps = (p1, p2) => {
   if (p1 === p2) return 'Draw!';
 }
 ```
+*Sentence Smash
+```javascript
+function smash (words) {
+    return words.join(' ');
+}
+const smash = w => w.join(' ');
+```
 
 
