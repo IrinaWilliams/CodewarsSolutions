@@ -546,5 +546,13 @@ function solution(str, ending){
   return str.endsWith(ending);
 }
 ```
+*https://www.codewars.com/kata/convert-to-binary/train/javascript
+```javascript
+const toBinary = n => +n.toString(2);
+//function toBinary(n){
+ // return Number(n.toString(2));
+//}
+```
+
 
 
