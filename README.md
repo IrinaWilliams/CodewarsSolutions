@@ -583,5 +583,14 @@ function smash (words) {
 }
 const smash = w => w.join(' ');
 ```
-
+*https://www.codewars.com/kata/count-odd-numbers-below-n/train/javascript
+```javascrip
+function oddCount(n) {
+  let res = 0;
+    for (let i = 1; i < n; i = i + 2) {
+      res++;
+    }
+   return res;
+}
+```
 
