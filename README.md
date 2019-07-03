@@ -593,4 +593,8 @@ function oddCount(n) {
    return res;
 }
 ```
+*https://www.codewars.com/kata/string-repeat/train/javascript
+```javascrip
+const repeatStr = (n, s) => s.repeat(n);
+```
 
