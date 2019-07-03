@@ -553,6 +553,12 @@ const toBinary = n => +n.toString(2);
 // return Number(n.toString(2));
 //}
 ```
+*https://www.codewars.com/kata/keep-hydrated-1/train/javascript
+```javascript
+function litres(time) {
+  return Math.floor(time * 0.5);
+}
+```
 
 
 
