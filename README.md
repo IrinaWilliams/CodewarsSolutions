@@ -597,4 +597,11 @@ function oddCount(n) {
 ```javascrip
 const repeatStr = (n, s) => s.repeat(n);
 ```
+*https://www.codewars.com/kata/how-good-are-you-really/train/javascript
+```javascrip
+  function betterThanAverage(cP, yP) {
+    return cP.reduce((acc, item) => acc + item, 0) / cP.length < yP;
+  }
+ ```
+
 
