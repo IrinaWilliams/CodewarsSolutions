@@ -617,5 +617,11 @@ class SmallestIntegerFinder {
 
 //return Math.min(...args);
 ```
-
+*https://www.codewars.com/kata/get-the-mean-of-an-array/train/javascript
+ ```javascrip
+function getAverage(marks){
+  let average = marks.reduce((acc, item) => acc + item) / marks.length;
+  return Math.floor(average);
+}
+```
 
