@@ -603,5 +603,19 @@ const repeatStr = (n, s) => s.repeat(n);
     return cP.reduce((acc, item) => acc + item, 0) / cP.length < yP;
   }
  ```
+ *https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
+ ```javascrip
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let minNum = args[0];
+    for(let i = 1; i < args.length; i++) {
+      if(args[i] < minNum) minNum = args[i];
+    }
+    return minNum;
+  }
+}
+
+//return Math.min(...args);
+```
 
 
