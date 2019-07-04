@@ -681,6 +681,22 @@ let str = "";
     return true;
   }
 ```
+*https://www.codewars.com/kata/multiple-of-index/train/javascript
+```javascript
+function multipleOfIndex(array) {
+ let arrNew = [];
+   for(let i = 0; i < array.length; i++) {
+     if(array[i] % i === 0) {
+       arrNew.push(array[i]);
+     }
+   }
+ return arrNew;
+}
+
+function multipleOfIndex(array) {
+  return array.filter((el, i) => el % i === 0);
+}
+```
 
 
  
