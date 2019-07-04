@@ -584,7 +584,7 @@ function smash (words) {
 const smash = w => w.join(' ');
 ```
 *https://www.codewars.com/kata/count-odd-numbers-below-n/train/javascript
-```javascrip
+```javascript
 function oddCount(n) {
   let res = 0;
     for (let i = 1; i < n; i = i + 2) {
@@ -594,17 +594,17 @@ function oddCount(n) {
 }
 ```
 *https://www.codewars.com/kata/string-repeat/train/javascript
-```javascrip
+```javascript
 const repeatStr = (n, s) => s.repeat(n);
 ```
 *https://www.codewars.com/kata/how-good-are-you-really/train/javascript
-```javascrip
+```javascript
   function betterThanAverage(cP, yP) {
     return cP.reduce((acc, item) => acc + item, 0) / cP.length < yP;
   }
  ```
  *https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
- ```javascrip
+ ```javascript
 class SmallestIntegerFinder {
   findSmallestInt(args) {
     let minNum = args[0];
@@ -618,14 +618,14 @@ class SmallestIntegerFinder {
 //return Math.min(...args);
 ```
 *https://www.codewars.com/kata/get-the-mean-of-an-array/train/javascript
- ```javascrip
+ ```javascript
 function getAverage(marks){
   let average = marks.reduce((acc, item) => acc + item) / marks.length;
   return Math.floor(average);
 }
 ```
 *https://www.codewars.com/kata/sum-without-highest-and-lowest-number/train/javascript
- ```javascrip
+```javascript
  function sumArray(array) {
    if(!array || array.length < 2) return 0;
   
@@ -648,7 +648,23 @@ function getAverage(marks){
  })
  return sum - min- max
  }
- ```
+```
+*https://www.codewars.com/kata/merge-two-sorted-arrays-into-one/train/javascript
+```javascript
+function mergeArrays(arr1, arr2) {
+  let newArr = [];
+  
+  for(let i = 0; i < arr1.length; i++) {
+    if(!newArr.includes(arr1[i]))
+    newArr.push(arr1[i]);
+  }
+   for(let i = 0; i < arr2.length; i++) {
+    if(!newArr.includes(arr2[i]))
+    newArr.push(arr2[i]);
+  }
+  return newArr.sort((a,b) => a-b);
+}
+```
 
 
  
