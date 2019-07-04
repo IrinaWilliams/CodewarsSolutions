@@ -665,6 +665,22 @@ function mergeArrays(arr1, arr2) {
   return newArr.sort((a,b) => a-b);
 }
 ```
+*https://www.codewars.com/kata/58ba6fece3614ba7c200017f
+```javascript
+function palindrome(num) {
+let str = "";
+    if (typeof num !== 'number' || num < 0) {
+      return "Not valid";
+    }
+      str = num + '';
+    for (let i = 0; i < str.length / 2; i++) {
+      if (str[i] !== str[str.length - 1 - i]) {
+        return false;
+      }
+    }
+    return true;
+  }
+```
 
 
  
