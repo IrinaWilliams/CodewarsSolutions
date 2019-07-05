@@ -697,6 +697,15 @@ function multipleOfIndex(array) {
   return array.filter((el, i) => el % i === 0);
 }
 ```
+*https://www.codewars.com/kata/print-a-rectangle-using-asterisks/train/javascript
+```javascript
+function getRectangleString(width, height) {
+  const rn = '\r\n';
+  const tb = '*'.repeat(width) + rn;
+  const center = (width > 1) ? ('*' + ' '.repeat(width - 2) + '*' + rn).repeat(height - 2) : '';
+  return (height > 1) ? (tb + center + tb) : tb.repeat(height);
+}
+```
 
 
  
