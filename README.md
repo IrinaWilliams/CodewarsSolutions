@@ -706,6 +706,25 @@ function getRectangleString(width, height) {
   return (height > 1) ? (tb + center + tb) : tb.repeat(height);
 }
 ```
+*https://www.codewars.com/kata/5a5915b8d39ec5aa18000030/solutions/javascript
+```javascript
+function findMissing(arr1, arr2) {
+  let index;
+  for(let i = 0; i < arr1.length; i++){
+    index = arr2.indexOf(arr1[i]);
+    if(index > -1){
+      arr2.splice(index, 1);
+    } else {
+    return arr1[i];
+    }
+  }
+}
+*https://www.codewars.com/kata/convert-number-to-reversed-array-of-digits/train/javascript
+```javascript
+function digitize(n) {
+ return n.toString().split('').reverse().map(el => +el);
+}
+```
 
 
  
