@@ -725,6 +725,15 @@ function digitize(n) {
  return n.toString().split('').reverse().map(el => +el);
 }
 ```
+*https://www.codewars.com/kata/difference-of-volumes-of-cuboids/train/javascript
+```javascript
+function findDifference(a, b) {
+  a = a.reduce((acc, cur) => acc * cur);
+  b = b.reduce((acc, cur) => acc * cur);
+   if(a >= b) return (a - b);
+   if(b >= a) return (b - a);
+}
+```
 
 
  
