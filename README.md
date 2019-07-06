@@ -743,6 +743,10 @@ function isDivideBy(number, a, b) {
  return number % a === 0 && number % b === 0;
 }
 ```
+*https://www.codewars.com/kata/can-we-divide-it/train/javascript
+```javascript
+const isDivideBy = (number, a, b) => number % a === 0 && number % b === 0;
+```
 
 
  
