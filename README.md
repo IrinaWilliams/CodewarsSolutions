@@ -747,7 +747,13 @@ function isDivideBy(number, a, b) {
 ```javascript
 const isDivideBy = (number, a, b) => number % a === 0 && number % b === 0;
 ```
-
+*https://www.codewars.com/kata/find-out-whether-the-shape-is-a-cube/train/javascript
+```javascript
+var cubeChecker = function(volume, side){
+ if(volume <= 0 || side <= 0) return false;
+   return Math.cbrt(volume) === side;
+}; 
+```
 
  
 
