@@ -737,6 +737,12 @@ function find_difference(a, b) {
   return Math.abs(a[0]*a[1]*a[2]-b[0]*b[1]*b[2]);
 }
 ```
+*https://www.codewars.com/kata/can-we-divide-it/train/javascript
+```javascript
+function isDivideBy(number, a, b) {
+ return number % a === 0 && number % b === 0;
+}
+```
 
 
  
