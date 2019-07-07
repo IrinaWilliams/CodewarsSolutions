@@ -772,5 +772,21 @@ function multiTable(number) {
   return res;
 }
 ```
+*https://www.codewars.com/kata/numerical-palindrome-number-5-1/train/javascript
+```javascript
+function palindrome(num) {
+  if (typeof num !== 'number' || num < 0) return 'Not valid';
+  let cnt = 0;
+  let str = num.toString().split('').sort();
+  if (str.length <= 1) return false;
+  for (let i = 0; i < str.length - 1 ; i++) {
+   if (str[i] === str[i + 1]) {
+     cnt+=2;
+     i++;
+     }  
+  }
+  return (str.length - cnt) <= 1 ? true : false; 
+}
+```
  
 
