@@ -319,7 +319,6 @@ return pontoonDistance/youSpeed < (sharkDistance/ (sharkSpeed/2)) ? "Alive!" : "
 } 
 ```
 * https://www.codewars.com/kata/59dd3ccdded72fc78b000b25
-
 ```javascript
 function whatday(num) { 
 const obj = { 
@@ -568,7 +567,7 @@ const rps = (p1, p2) => {
   if (p1 === p2) return 'Draw!';
 }
 ```
-*Sentence Smash
+*https://www.codewars.com/kata/sentence-smash/train/javascript
 ```javascript
 function smash (words) {
     return words.join(' ');
