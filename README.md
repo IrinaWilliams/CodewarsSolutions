@@ -755,6 +755,11 @@ function enough(cap, on, wait) {
   return cap >= on + wait ? 0 : (on + wait) - cap;
 }
 ```
-
+*https://www.codewars.com/kata/convert-a-boolean-to-a-string/train/javascript
+```javascript
+function booleanToString(b){
+  return b === true ? 'true' : 'false';
+}
+```
  
 
