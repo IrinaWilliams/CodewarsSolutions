@@ -749,6 +749,12 @@ let sum = 0;
    return sum;
 }
 ```
+*https://www.codewars.com/kata/will-there-be-enough-space/train/javascript
+```javascript
+function enough(cap, on, wait) {
+  return cap >= on + wait ? 0 : (on + wait) - cap;
+}
+```
 
  
 
