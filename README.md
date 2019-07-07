@@ -754,6 +754,18 @@ var cubeChecker = function(volume, side){
    return Math.cbrt(volume) === side;
 }; 
 ```
+*https://www.codewars.com/kata/5b73fe9fb3d9776fbf00009e/solutions/javascript
+```javascript
+function sumOfDifferences(arr) {
+  const sorted = arr.sort((a, b) => b - a);
+  let sum = 0;
+  
+  for (let i = 1; i < sorted.length; i++){
+  sum += sorted[i - 1] - sorted[i];
+  }
+  return sum;
+}
+```
 
  
 
