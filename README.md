@@ -39,8 +39,6 @@ function isPalindrome(line) {
     }
   return backLine === line1 ? true : false;
 }
-
-*new solution
 function isPalindrome(line) {
   return (line.toString() == line.toString().split('').reverse().join(''));
 }
@@ -75,7 +73,6 @@ function switchItUp(number){
     case 9: return 'Nine';
   }
 }
-
   function switchItUp(number){
     let arr = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight','Nine'];
       return arr[number];
@@ -182,8 +179,6 @@ let str = "";
     }
     return true;
   }
-```
-
 function palindrome(num) { 
 if(typeof num !== 'number' || num < 0){
   return 'Not valid';
@@ -192,7 +187,6 @@ if(typeof num !== 'number' || num < 0){
   return arr === num;
 }
 ```
-
 
 *https://www.codewars.com/kata/57cfdf34902f6ba3d300001e/train/javascript
 ```javascript
@@ -241,7 +235,7 @@ let backNum = [];
   return backNum;
 }
 ```
-
+*practice
 ```javascript
 let str = 'Alice';
 function charToCap(str) {
@@ -259,12 +253,10 @@ function solution(str){
     }
     return backWord;
 }
-```
-
 function solution(str){
   return str.split('').reverse().join('');  
 }
-
+```
 *https://www.codewars.com/kata/convert-a-number-to-a-string/train/javascript
 ```javascript
 function numberToString(num) {
