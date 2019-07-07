@@ -28,7 +28,6 @@ let isSquare = function(n){
   return false; 
 }
 ```
-
 *https://www.codewars.com/kata/palindrome-strings/train/javascript
 ```javascript
 function isPalindrome(line) {
@@ -56,7 +55,6 @@ function evalObject(value){
   }
 }
 ```
-
 *https://www.codewars.com/kata/switch-it-up/train/javascript
 ```javascript
 function switchItUp(number){
@@ -78,7 +76,6 @@ function switchItUp(number){
       return arr[number];
   }
 ```
-
 *https://www.codewars.com/kata/get-list-sum-recursively/train/javascript
 ```javascript
 function sumR(x) {
@@ -88,7 +85,6 @@ function sumR(x) {
   return x.shift() + sumR(x);
 }
 ```
-
 *https://www.codewars.com/kata/reverse-list-order/train/javascript
 ```javascript
 function reverseList(list) {
@@ -99,21 +95,18 @@ function reverseList(list) {
     return arr;
 }
 ```
-
 *https://www.codewars.com/kata/simple-multiplication/train/javascript
 ```javascript
 function simpleMultiplication(number) {
   return number % 2 === 0 ? number * 8 : number * 9;
 }
 ```
-
 *https://www.codewars.com/kata/convert-boolean-values-to-strings-yes-or-no/train/javascript
 ```javascript
 function boolToWord( bool ){
   return bool === true ? 'Yes' : 'No';
 }
 ```
-
 *https://www.codewars.com/kata/reverse-a-number/train/javascript
 ```javascript
 function reverseNumber(n) {
@@ -127,7 +120,6 @@ function reverseNumber(n) {
     }
 }
 ```
-
 *https://www.codewars.com/kata/find-the-calculation-type/train/javascript
 ```javascript
 function calcType(a, b, res) {
@@ -145,7 +137,6 @@ function calcType(a, b, res) {
   }
 }
 ```
-
 *https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 ```javascript
 function stringToArray(string){
@@ -153,7 +144,6 @@ function stringToArray(string){
     return s;
 }
 ```
-
 *https://www.codewars.com/kata/simple-beads-count/train/javascript
 ```javascript
 function countRedBeads(n) {
@@ -163,7 +153,6 @@ function countRedBeads(n) {
    return (n - 1) * 2;
 }
 ```
-
 *https://www.codewars.com/kata/numerical-palindrome-number-1/train/javascript
 ```javascript
 function palindrome(num) {
@@ -187,35 +176,30 @@ if(typeof num !== 'number' || num < 0){
   return arr === num;
 }
 ```
-
 *https://www.codewars.com/kata/57cfdf34902f6ba3d300001e/train/javascript
 ```javascript
 function twoSort(s) {
 return s.sort().slice(0,1)[0].split("").reduce((x,y,z) => x + "***" + y);
 }   
 ```
-
 *https://www.codewars.com/kata/the-feast-of-many-beasts/train/javascript
 ```javascript
 function feast(beast, dish) {
 return beast[0] === dish[0] && beast[beast.length -1] === dish[dish.length -1];
 }
 ```
-
 *https://www.codewars.com/kata/you-cant-code-under-pressure-number-1/train/javascript
 ```javascript
 function doubleInteger(i) {
   return i * 2;
 }
 ```
-
 *https://www.codewars.com/kata/remove-string-spaces/train/javascript
 ```javascript
 function noSpace(x){
 return  x.replace (/\s/g, '');
 }
 ```
-
 *https://www.codewars.com/kata/random-case/train/javascript
 ```javascript
 function randomCase(x) {
@@ -224,7 +208,6 @@ function randomCase(x) {
     }).join('');
 }
 ```
-
 *https://www.codewars.com/kata/5a00e05cc374cb34d100000d
 ```javascript
 function reverseSeq(n) {
@@ -243,7 +226,6 @@ function charToCap(str) {
 }
 console.log(charToCap(str));
 ```
-
 *https://www.codewars.com/kata/5168bb5dfe9a00b126000018
 ```javascript
 function solution(str){
@@ -264,7 +246,6 @@ function numberToString(num) {
   return str;
 }
 ```
-
 *https://www.codewars.com/kata/572b77262bedd351e9000076
 ```javascript
 function first(arr, n =1) {
