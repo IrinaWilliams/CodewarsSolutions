@@ -856,5 +856,19 @@ function greet(language) {
   return 'Welcome'
 }
 ```
+[Welcome to the City](https://www.codewars.com/kata/welcome-to-the-city/train/javascript) /*object*/
+ ```javascript
+ function sayHello( name, city, state ) {
+ let fullName = '';
+   for(let i = 0; i < name.length; i++) {
+     fullName = fullName + ' ' + name[i];
+   }
+ return `Hello,${fullName}! Welcome to ${city}, ${state}!`;
+ }
+ function sayHello( name, city, state ) {
+ return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+ }
+ const sayHello = ( name, city, state ) => `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+ ```
  
 
