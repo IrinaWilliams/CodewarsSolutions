@@ -788,5 +788,73 @@ function palindrome(num) {
   return (str.length - cnt) <= 1 ? true : false; 
 }
 ```
+[Welcome!](https://www.codewars.com/kata/welcome/train/javascript) /*object*/
+```javascript
+function greet(language) {
+switch (language) {
+  case 'english': 
+    return'Welcome';
+  case 'czech': 
+    return 'Vitejte';
+  case 'danish': 
+    return 'Velkomst';
+  case 'dutch': 
+    return 'Welkom';
+  case 'estonian': 
+    return 'Tere tulemast';
+  case 'finnish': 
+    return 'Tervetuloa';
+  case 'flemish': 
+    return 'Welgekomen';
+  case 'french': 
+    return 'Bienvenue';
+  case 'german': 
+    return 'Willkommen';
+  case 'irish': 
+    return 'Failte';
+  case 'italian': 
+    return 'Benvenuto';
+  case 'latvian': 
+    return 'Gaidits';
+  case 'lithuanian': 
+    return 'Laukiamas';
+  case 'polish': 
+    return 'Witamy';
+  case 'spanish': 
+    return 'Bienvenido';
+  case 'swedish': 
+    return 'Valkommen';
+  case 'welsh': 
+    return 'Croeso';
+};
+    return 'Welcome';
+}
+function greet(language) {
+  let dictionary = {
+  english: 'Welcome',
+  czech: 'Vitejte',
+  danish: 'Velkomst',
+  dutch: 'Welkom',
+  estonian: 'Tere tulemast',
+  finnish: 'Tervetuloa',
+  flemish: 'Welgekomen',
+  french: 'Bienvenue',
+  german: 'Willkommen',
+  irish: 'Failte',
+  italian: 'Benvenuto',
+  latvian: 'Gaidits',
+  lithuanian: 'Laukiamas',
+  polish: 'Witamy',
+  spanish: 'Bienvenido',
+  swedish: 'Valkommen',
+  welsh: 'Croeso'
+  };
+  for(let key in dictionary){
+    if(key === language)
+     return dictionary[key];
+  }
+  return 'Welcome'
+}
+```
  
 
