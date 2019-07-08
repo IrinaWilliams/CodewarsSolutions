@@ -875,4 +875,10 @@ function greet(language) {
 function nthEven(n){
   return n * 2 - 2;
 }
- ```
+```
+[Enumerable Magic #2 - True for Any?](https://www.codewars.com/kata/enumerable-magic-number-2-true-for-any/train/javascript) /*arr.some*/
+```javascript
+function any(arr, fun){
+  return arr.some(fun);
+}
+```
