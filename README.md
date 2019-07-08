@@ -882,3 +882,14 @@ function any(arr, fun){
   return arr.some(fun);
 }
 ```
+[Total amount of points](https://www.codewars.com/kata/total-amount-of-points/train/javascript) /*g.forEach(item =>*/
+```javascript
+function points(g) {
+  let count = 0;
+  g.forEach(item => {
+    if(item[0] > item[2]) count += 3;
+      if(item[0] === item[2]) count += 1;
+    })
+  return count;
+}
+```
