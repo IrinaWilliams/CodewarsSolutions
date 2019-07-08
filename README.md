@@ -870,5 +870,9 @@ function greet(language) {
  }
  const sayHello = ( name, city, state ) => `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
  ```
- 
-
+ [Get Nth Even Number](https://www.codewars.com/kata/get-nth-even-number/train/javascript) 
+```javascript
+function nthEven(n){
+  return n * 2 - 2;
+}
+ ```
