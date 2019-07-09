@@ -914,3 +914,17 @@ function take(arr, n) {
   return  arr.length<n ? arr.slice(): arr.slice(0,n)
 }
 ```
+[A Gift Well Spent] (https://www.codewars.com/kata/a-gift-well-spent/train/javascript)
+```javascript
+const buy = function(x, arr){
+  let res = [];
+    for(let i = 0; i < arr.length - 1; i++) {
+      for(let j = i + 1; j < arr.length; j++) {
+       if(arr[i] + arr[j] === x) {
+         return [i, j];
+       }
+      }
+    }
+  return null;
+};
+```
