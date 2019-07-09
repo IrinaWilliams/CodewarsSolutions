@@ -909,4 +909,8 @@ function points(games) {
 function take(arr, n) {
   return arr.slice(0, n);
 }
+function take(arr, n) {
+
+  return  arr.length<n ? arr.slice(): arr.slice(0,n)
+}
 ```
