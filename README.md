@@ -949,4 +949,9 @@ const maxTriSum = numbers => {
   const [a,b,c,...rest] = [...new Set([...numbers])].sort((a,b)=>b-a)
   return a+b+c
 }
+function maxTriSum(numbers){
+  return numbers.filter((el, i )=> i === numbers.lastIndexOf(el))
+  .sort((a, b) => a - b).slice(-3).reduce((a, b) => a + b, 0);
+}
+
 ```
