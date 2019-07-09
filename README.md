@@ -914,7 +914,7 @@ function take(arr, n) {
   return  arr.length<n ? arr.slice(): arr.slice(0,n)
 }
 ```
-[A Gift Well Spent] (https://www.codewars.com/kata/a-gift-well-spent/train/javascript)
+[A Gift Well Spent](https://www.codewars.com/kata/a-gift-well-spent/train/javascript)
 ```javascript
 const buy = function(x, arr){
   let res = [];
@@ -927,4 +927,22 @@ const buy = function(x, arr){
     }
   return null;
 };
+```
+[Maximum Triplet Sum (Array Series #7](https://www.codewars.com/kata/maximum-triplet-sum-array-series-number-7/train/javascript)/*arr.includes*/
+```javascript
+function maxTriSum(numbers){
+  let sum = 0;
+    let res = numbers.sort((a, b) => b - a);
+      let arr = [];
+        for (let i = 0; i < res.length; i++) {
+          if (arr.length >= 3) {
+            break;
+          }
+          if (!arr.includes(res[i])) {
+            arr.push(res[i]);
+            sum += res[i];
+         }
+       }
+   return sum;
+}
 ```
