@@ -953,5 +953,12 @@ function maxTriSum(numbers){
   return numbers.filter((el, i )=> i === numbers.lastIndexOf(el))
   .sort((a, b) => a - b).slice(-3).reduce((a, b) => a + b, 0);
 }
-
+```
+[Sort the odd](https://www.codewars.com/kata/sort-the-odd/train/javascript)/*array.filter.sort.map.shift*/
+```javascript
+function sortArray(array) {
+  let odd = array.filter(a => a % 2 !== 0).sort((a,b) => a - b);
+  let res = array.map(a => a % 2 !== 0 ? odd.shift() : a);
+  return res;
+}
 ```
