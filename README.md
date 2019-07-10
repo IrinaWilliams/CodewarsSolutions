@@ -1012,3 +1012,24 @@ function crap(x, bags, cap){
  return crapCount > totalCap ? 'Cr@p' : 'Clean'; 
 }
 ```
+```javascript
+```
+[Reversed Words](https://www.codewars.com/kata/reversed-words/train/javascript) /*split.join*/
+```javascript
+function reverseWords(str){
+  let arr = str.split(' ');
+  let newArr = [];
+    for(let i = arr.length - 1; i >= 0; i--) {
+      newArr.push(arr[i]);
+    }
+  return newArr.join(' '); 
+}
+function reverseWords(str){
+  let arr = str.split(' ');
+  let newArr = [];
+    for(let i = arr.length - 1; i >= 0; i--) {
+      newArr.push(arr[i]);
+    }
+  return newArr.join(' '); 
+}
+```
