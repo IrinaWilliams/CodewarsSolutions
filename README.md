@@ -1012,8 +1012,6 @@ function crap(x, bags, cap){
  return crapCount > totalCap ? 'Cr@p' : 'Clean'; 
 }
 ```
-```javascript
-```
 [Reversed Words](https://www.codewars.com/kata/reversed-words/train/javascript) /*split.join*/
 ```javascript
 function reverseWords(str){
@@ -1039,3 +1037,11 @@ function sumStr(a,b) {
   return +a + +b + '';
 }
 ``` 
+[No Loops 2 - You only need one](https://www.codewars.com/kata/no-loops-2-you-only-need-one/train/javascript)
+```javascript
+const check = (a, x) => a.includes(x);
+```
+[isReallyNaN](https://www.codewars.com/kata/isreallynan/train/javascript) /*isNaN*/
+```javascript
+const isReallyNaN = (val) => Number.isNaN(val);
+```
