@@ -1000,4 +1000,15 @@ let count = 0;
   }
     return (bags * cap) >= count ? "Clean" : "Cr@p";
 }
+function crap(x, bags, cap){ 
+ let crapCount = 0;
+ const totalCap = bags * cap;
+ for(let i = 0; i < x.length; i++){
+   for(let j = 0; j < x[i].length; j++){
+     if(x[i][j] === '@') crapCount++;
+     if(x[i][j] === 'D') return 'Dog!!';
+   }
+ }
+ return crapCount > totalCap ? 'Cr@p' : 'Clean'; 
+}
 ```
