@@ -984,3 +984,20 @@ function greet (name, owner) {
 return name === owner ? 'Hello boss' : 'Hello guest';
 }
 ```
+[Clean up after your dog](https://www.codewars.com/kata/clean-up-after-your-dog/train/javascript)
+```javascript
+function crap(x, bags, cap) {
+let arr = x.toString();
+let count = 0;
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i].includes('D')) {
+       return 'Dog!!';
+    }
+    if(arr[i].includes('@')) {
+       count++;
+    }
+    
+  }
+    return (bags * cap) >= count ? "Clean" : "Cr@p";
+}
+```
