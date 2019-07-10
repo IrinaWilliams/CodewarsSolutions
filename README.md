@@ -962,3 +962,25 @@ function sortArray(array) {
   return res;
 }
 ```
+[Numerical Palindrome #2]https://www.codewars.com/kata/numerical-palindrome-number-2/train/javascript
+```javascript
+function palindrome(num){
+ if(typeof num !== 'number' || num < 0 || num % 1 != 0){
+   return "Not valid";
+ }
+   if(num < 10){
+    return false;
+   }
+      let str = num + '';
+        for(let i = 0; i < str.length; i++){
+          if(str[i] === str[i + 1]  || str[i] === str[i + 2]) return true;
+       }
+    return false;
+}
+```
+[Grasshopper - Personalized Message](https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript)
+```javascript
+function greet (name, owner) {
+return name === owner ? 'Hello boss' : 'Hello guest';
+}
+```
