@@ -1033,3 +1033,9 @@ function reverseWords(str){
   return newArr.join(' '); 
 }
 ```
+[Sum The Strings](https://www.codewars.com/kata/sum-the-strings/train/javascript)
+```javascript
+function sumStr(a,b) {
+  return +a + +b + '';
+}
+``` 
