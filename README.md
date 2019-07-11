@@ -1052,3 +1052,10 @@ function typeValidation(variable, type) {
   return (typeof variable === type);
 }
  ```
+[Beginner Series #1 School Paperwork](https://www.codewars.com/kata/beginner-series-number-1-school-paperwork/train/javascript)
+ ```javascript
+function paperwork(n, m) {
+  if(n <= 0 || m <= 0) return 0;
+  return n * m;
+}
+ ```
