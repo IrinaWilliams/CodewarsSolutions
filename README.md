@@ -1059,3 +1059,9 @@ function paperwork(n, m) {
   return n * m;
 }
  ```
+ [Sum of positive](https://www.codewars.com/kata/sum-of-positive/train/javascript)
+  ```javascript
+ function positiveSum(arr) {
+   return arr.reduce((a, b) => {return (b > 0 ) ? (a + b) : (a + 0)}, 0);
+ }
+  ```
