@@ -1081,3 +1081,10 @@ function past(h, m, s){
   return ((h * 60 + m) * 60 + s) * 1000;
 }
 ```
+[Filter out the geese](https://www.codewars.com/kata/57ee4a67108d3fd9eb0000e7/solutions/javascript)
+```javascript
+function gooseFilter (birds) {
+  const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter(item => !geese.includes(item))
+};
+```
