@@ -1060,8 +1060,18 @@ function paperwork(n, m) {
 }
  ```
  [Sum of positive](https://www.codewars.com/kata/sum-of-positive/train/javascript)
-  ```javascript
+```javascript
  function positiveSum(arr) {
    return arr.reduce((a, b) => {return (b > 0 ) ? (a + b) : (a + 0)}, 0);
  }
-  ```
+```
+[Removing Elements](https://www.codewars.com/kata/removing-elements/train/javascript)
+```javascript
+function removeEveryOther(arr){
+  let newArr = [];
+    for(let i = 0; i < arr.length; i += 2) {
+      newArr.push(arr[i]);
+    }
+  return newArr;
+}
+```
