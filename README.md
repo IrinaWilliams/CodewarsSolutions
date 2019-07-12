@@ -1114,3 +1114,19 @@ for (let name in meet) {
 return (sum + meet[boss])/count <= 5 ?  'Get Out Now!' : 'Nice Work Champ!';
 }
 ```
+[Who likes it?](https://www.codewars.com/kata/who-likes-it/train/javascript)
+```javascript
+function likes(names) {
+  if(names.length === 0) return 'no one likes this';
+    if(names.length === 1) return `${names} likes this`;
+      if(names.length === 2) return `${names[0]} and ${names[1]} like this`;
+        if(names.length === 3) return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+let count = 0;
+  for(let i = 2; i < names.length; i++) {
+  count++;
+}
+
+ return `${names[0]}, ${names[1]} and ${count} others like this`;
+}
+
+```
