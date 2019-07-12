@@ -1102,3 +1102,15 @@ function meeting(x){
   return 'None available!';
 }
 ```
+[The Office I - Outed](https://www.codewars.com/kata/the-office-i-outed/train/javascript)
+```javascript
+function outed(meet, boss){
+let sum = 0;
+let count = 0;
+for (let name in meet) {
+  count++;
+  sum += meet[name];
+}
+return (sum + meet[boss])/count <= 5 ?  'Get Out Now!' : 'Nice Work Champ!';
+}
+```
