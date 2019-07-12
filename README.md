@@ -1088,3 +1088,10 @@ function gooseFilter (birds) {
   return birds.filter(item => !geese.includes(item))
 };
 ```
+[The Office IV - Find a Meeting Room](https://www.codewars.com/kata/the-office-iv-find-a-meeting-room/train/javascript)
+```javascript
+function meeting(x){
+let c = x.indexOf('O')
+  return c > -1 ? c : 'None available!';
+}
+```
