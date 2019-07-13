@@ -1167,3 +1167,10 @@ function flattenAndSort(array) {
   return newArr.sort((a,b) => a - b);
 }
 ```
+[Sum of two lowest positive integers](https://www.codewars.com/kata/sum-of-two-lowest-positive-integers/train/javascript)
+```javascript
+function sumTwoSmallestNumbers(n) {  
+n.sort((a, b) => a - b);
+  return n[0] + n[1];
+}
+```
