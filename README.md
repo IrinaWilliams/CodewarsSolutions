@@ -1148,3 +1148,13 @@ function reverse(string){
 return string.split(' ').reverse().join(' ');
 }
 ```
+[Flatten and sort an array](https://www.codewars.com/kata/flatten-and-sort-an-array/train/javascript)
+```javascript
+function flattenAndSort(array) { 
+ if(array.length === 0) return [];
+ let str = array.toString();
+ let newArr = str.split(',').filter(el => el !== '');
+ let newArray = newArr.sort((a, b) => a - b).map(Number);
+  return newArray;
+}
+```
