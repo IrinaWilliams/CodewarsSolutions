@@ -1174,3 +1174,9 @@ n.sort((a, b) => a - b);
   return n[0] + n[1];
 }
 ```
+[Is the string uppercase?](https://www.codewars.com/kata/is-the-string-uppercase/train/javascript)
+```javascript
+String.prototype.isUpperCase = function() {
+  return this.toUpperCase() === this.toString();
+}
+```
