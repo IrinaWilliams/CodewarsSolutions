@@ -1180,3 +1180,17 @@ String.prototype.isUpperCase = function() {
   return this.toUpperCase() === this.toString();
 }
 ```
+[Reverse every other word in the string](https://www.codewars.com/kata/reverse-every-other-word-in-the-string/train/javascript) 
+```javascript
+function reverse(str) {
+ return str
+         .trim()
+         .split(' ')
+         .map((el, i) => {
+         return i % 2
+           ? el.split('').reverse().join('')
+           : el;
+         }) 
+         .join(' ');
+}
+```
