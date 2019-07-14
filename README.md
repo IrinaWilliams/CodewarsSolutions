@@ -1199,3 +1199,15 @@ function reverse(str) {
 const min = (list) => Math.min(...list);
 const max = (list) => Math.max(...list);
 ```
+[Filter the number](https://www.codewars.com/kata/filter-the-number/train/javascript)
+```javascript
+const FilterString = function(v) {
+let res = '';
+  for(let i = 0; i < v.length; i++) {
+    if(v[i] >= 0){
+      res += v[i];
+    }
+  }
+  return +res;
+}
+```
