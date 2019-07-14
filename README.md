@@ -1194,3 +1194,8 @@ function reverse(str) {
          .join(' ');
 }
 ```
+[Find Maximum and Minimum Values of a List](https://www.codewars.com/kata/find-maximum-and-minimum-values-of-a-list/train/javascript)
+```javascript
+const min = (list) => Math.min(...list);
+const max = (list) => Math.max(...list);
+```
