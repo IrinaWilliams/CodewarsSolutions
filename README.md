@@ -1218,3 +1218,15 @@ const FilterString = function(value) {
   return +value.split('').filter(n => !isNaN(n)).join('');
 }
 ```
+[Power](https://www.codewars.com/kata/power/train/javascript)
+```javascript
+function numberToPower(number, power){
+  let sum = 1;
+  let i = 1;
+    while (i <= power) {
+      sum = number * sum;
+      i++;
+    } 
+  return sum;
+}
+```
