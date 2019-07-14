@@ -1210,4 +1210,11 @@ let res = '';
   }
   return +res;
 }
+const FilterString = function(value) {
+  return parseInt(value.replace(/[^\d]/g, ""))
+}
+const FilterString = value => +value.replace(/\D/g, '');
+const FilterString = function(value) {
+  return +value.split('').filter(n => !isNaN(n)).join('');
+}
 ```
