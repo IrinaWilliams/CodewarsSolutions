@@ -1243,3 +1243,9 @@ let total = amount.toFixed(2);
   return `$${total}`;
 }
 ```
+[Multiply](https://www.codewars.com/kata/multiply/train/javascript)
+```javascript
+function multiply(a, b){
+  return (a * b);
+}
+```
