@@ -1236,3 +1236,10 @@ function search(budget, prices) {
  return prices.filter((el) => el <= budget).sort((a,b) => a-b).join(',');
 }
 ```
+[Dollars and Cents](https://www.codewars.com/kata/dollars-and-cents/train/javascript)
+```javascript
+function formatMoney(amount){
+let total = amount.toFixed(2);
+  return `$${total}`;
+}
+```
