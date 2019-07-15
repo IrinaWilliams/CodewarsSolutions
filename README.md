@@ -1249,3 +1249,15 @@ function multiply(a, b){
   return (a * b);
 }
 ```
+[Find numbers which are divisible by given number](https://www.codewars.com/kata/find-numbers-which-are-divisible-by-given-number/train/javascript)
+```javascript
+function divisibleBy(n, d){
+const res = [];
+  for(let i = 0; i < n.length; i++) {
+    if(n[i] % d === 0) {
+      res.push(n[i]);
+    }
+  }
+  return res;
+}
+```
