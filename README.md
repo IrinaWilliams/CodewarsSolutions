@@ -1230,3 +1230,9 @@ function numberToPower(number, power){
   return sum;
 }
 ```
+[Filter Coffee](https://www.codewars.com/kata/filter-coffee/train/javascript) /*filter.sort.join*/
+```javascript
+function search(budget, prices) {
+ return prices.filter((el) => el <= budget).sort((a,b) => a-b).join(',');
+}
+```
