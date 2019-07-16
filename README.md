@@ -1279,3 +1279,11 @@ function broken(x){
   return res;
 }
 ```
+[Last](https://www.codewars.com/kata/last/train/javascript)
+```javascript
+function last(...list){
+  let  str = list.join();
+    if(str.includes(',')) str = str.split(',');
+  return !isNaN(+str[str.length-1]) ? +str[str.length-1] : str[str.length-1];
+}
+```
