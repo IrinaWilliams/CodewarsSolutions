@@ -1264,3 +1264,11 @@ function divisibleBy(numbers, divisor) {
   return numbers.filter(n => n % divisor === 0)
 }
 ```
+[The Office III - Broken Photocopier](https://www.codewars.com/kata/the-office-iii-broken-photocopier/train/javascript) /*replace(regex)*/
+```javascript
+function broken(x){
+  return x.replace(/[01]/g, (a) => {
+  return a === '0' ? '1' : '0';
+  })
+}
+```
