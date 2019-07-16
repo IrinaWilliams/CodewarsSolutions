@@ -1271,4 +1271,11 @@ function broken(x){
   return a === '0' ? '1' : '0';
   })
 }
+function broken(x){
+  let res = '';
+    for(let i = 0; i < x.length; i++) {
+      res += x[i] === '0' ? '1' : '0';
+    }
+  return res;
+}
 ```
