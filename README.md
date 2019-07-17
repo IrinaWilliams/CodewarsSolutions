@@ -1309,3 +1309,18 @@ function boredom(staff){
  let sum = Object.values(staff).map(el => obj[el]).reduce((a, b) => a + b);
 }
 ```
+[To square(root) or not to square(root)](https://www.codewars.com/kata/to-square-root-or-not-to-square-root/train/javascript) /*Number.isInteger(j)*/
+```javascript
+function squareOrSquareRoot(array) {
+const newArr = [];
+  for(let i = 0; i < array.length; i++) {
+    let j = array[i] ** 0.5; 
+      if(Number.isInteger(j) ) {
+        newArr.push(j);
+      } else {
+        newArr.push(array[i] ** 2);
+      }
+    }
+  return newArr;  
+}
+```
