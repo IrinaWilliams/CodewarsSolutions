@@ -1324,3 +1324,10 @@ const newArr = [];
   return newArr;  
 }
 ```
+[Shortest Word](https://www.codewars.com/kata/shortest-word/train/javascript)
+```javascript
+function findShort(s){
+let shortesWord = s.split(' ').sort((a, b) => a.length - b.length);
+ return shortesWord[0].length;
+}
+```
