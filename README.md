@@ -1451,3 +1451,11 @@ centuryFromYear(1900)  returns (19)
 centuryFromYear(1601)  returns (17)
 centuryFromYear(2000)  returns (20)*/
 ```
+[Discover The Original Price](https://www.codewars.com/kata/discover-the-original-price/train/javascript)
+```javascript
+function discoverOriginalPrice(discountedPrice, salePer){
+ let restPer = 100 - salePer;
+ let totalPrice = (discountedPrice / restPer) * 100;
+ return +totalPrice.toFixed(2);
+}
+```
