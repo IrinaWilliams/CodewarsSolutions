@@ -1482,3 +1482,36 @@ console.log(checkExam([ 'a', 'b', 'a', 'c', 'a', 'b', 'b', 'c', 'c', 'c', 'c', '
   console.log(checkExam(["a", "a", "c", "b"], ["a", "a", "b",  ""]));
   console.log(checkExam(["a", "a", "b", "c"], ["a", "a", "b", "c"]));
 ```
+[Clocky Mc Clock-Face](https://www.codewars.com/kata/clocky-mc-clock-face/train/javascript)
+```javascript
+
+const whatTimeIsIt = function(angle) {
+let hour = 360 / 12; //30
+let mimut = hour/60; //0.5
+let hourClock = Math.floor(angle/hour);
+let totalHour = (angle - (hour * hourClock)).toFixed(2);
+let totalMin = Math.floor(totalHour/mimut);
+
+if(hourClock === 0) {
+    hourClock = '12';
+  }  
+  if(angle === 0) {
+    return '12:00';
+   
+  }
+  if(String(hourClock).length < 2) {
+    hourClock = 0 + String(hourClock);
+  }
+  if(String(totalMin).length < 2) {
+    totalMin = 0 + String(totalMin);
+  }
+return `${hourClock}:${totalMin}`;
+}
+let whatTimeIsIt = function(angle) {
+  let h = angle / 0.5;
+  let fh = Math.floor(h / 60)
+  let min = Math.floor(h % 60);
+  if(angle < 30) fh = 12;
+  return ('00' + fh).slice(-2) +':'+('00' + min).slice(-2);
+}
+```
