@@ -1626,6 +1626,16 @@ function accum(s) {
 function stairsIn20(stairs){
   return stairs.reduce((steps, day) => steps.concat(day)).reduce((sum, count) => sum + count) * 20;
 }
+
+function stairsIn20(s){
+  for (let i = 0, sum = 0; i<s.length ; i++) {
+    for (let j = 0; j<s[i].length; j++) {
+      sum += s[i][j];
+    }
+  }
+  return sum*20;
+}
+
 /*Test.describe("Basic tests",_=>{
   var sunday = [6737, 7244, 5776, 9826, 7057, 9247, 5842, 5484, 6543, 5153, 6832, 8274,
             7148, 6152, 5940, 8040, 9174, 7555, 7682, 5252, 8793, 8837, 7320, 8478, 6063, 
