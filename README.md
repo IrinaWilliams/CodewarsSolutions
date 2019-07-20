@@ -1581,4 +1581,18 @@ function accum (s) {
     return element.toUpperCase() + element.toLowerCase().repeat(index);
   }).join('-');
 }
+function accum(s) {
+  return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+}
+function accum(s) {
+  let arr = [];
+  for (let i = 0; i < s.length; i++) {
+    let r = s[i].toUpperCase();
+    for (let j = 0; j < i; j++) {
+      r += s[i].toLowerCase();
+    }
+    arr.push(r);
+  }
+  return arr.join("-");
+}
 ```
