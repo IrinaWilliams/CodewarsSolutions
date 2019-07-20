@@ -1576,4 +1576,9 @@ function accum(s) {
   let str = arr2.split(' ').join('-');
 return str;
 }
+function accum (s) {
+  return [...s].map((element, index) => {
+    return element.toUpperCase() + element.toLowerCase().repeat(index);
+  }).join('-');
+}
 ```
