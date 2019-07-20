@@ -1672,3 +1672,17 @@ stairsIn20 = s => s.map(x => x.reduce((a,b) => a + b)).reduce((a,b) => a + b) * 
   Test.assertEquals(stairsIn20(stairs), 54636040);
   })*/
 ```
+[Add Length](https://www.codewars.com/kata/add-length/train/javascript)
+```javascript
+/*What if we need the length of the words separated by a space to be added at the end of that same word and have it returned as an array?
+  addLength('apple ban') => ["apple 5", "ban 3"]
+  addLength('you will win') => ["you 3", "will 4", "win 3"]
+  Your task is to write a function that takes a String and returns an Array/list with the length of each word added to each element .
+  Note: String will have at least one element; words will always be separated by a space.*/
+
+function addLength(str) {
+  return str.split(' ').map((el) => el  + ' ' + el.length);
+}
+/*Test.assertSimilar(addLength('apple ban'),["apple 5", "ban 3"]);
+  Test.assertSimilar(addLength('you will win'),["you 3", "will 4", "win 3"]);*/
+```
