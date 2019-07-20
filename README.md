@@ -1566,3 +1566,14 @@ Test.assertDeepEquals(divisors(15), [3, 5]);
 Test.assertDeepEquals(divisors(12), [2, 3, 4, 6]);
 Test.assertDeepEquals(divisors(13), "13 is prime");
 ```
+[Mumbling](https://www.codewars.com/kata/mumbling/train/javascript)
+```javascript
+function accum(s) {
+  const arr1 = s.toLowerCase().split('').map(function(el, index) {
+    return el[0] + el.repeat(index);
+  });
+  const arr2 = arr1.join(' ').replace(/\b\w/g, l => l.toUpperCase());
+  let str = arr2.split(' ').join('-');
+return str;
+}
+```
