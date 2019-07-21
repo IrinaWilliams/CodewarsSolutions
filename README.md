@@ -1686,3 +1686,9 @@ function addLength(str) {
 /*Test.assertSimilar(addLength('apple ban'),["apple 5", "ban 3"]);
   Test.assertSimilar(addLength('you will win'),["you 3", "will 4", "win 3"]);*/
 ```
+[No Loops 1 - Small enough?](https://www.codewars.com/kata/no-loops-1-small-enough/train/javascript)
+```javascript
+function smallEnough(a, limit){
+  return (a.filter(el => el > limit).length > 0 ? false : true);
+}
+```
