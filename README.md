@@ -1696,6 +1696,7 @@ Do not use loops. Do not modify input array.*/
 function smallEnough(a, limit){
   return (a.filter(el => el > limit).length > 0 ? false : true);
 }
+const smallEnough = (a, limit) => a.every(el => el <= limit);
 /*Test.assertEquals(smallEnough([66, 101], 200), true);
   Test.assertEquals(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100), false);
   Test.assertEquals(smallEnough([101, 45, 75, 105, 99, 107], 107), true);
