@@ -1721,3 +1721,13 @@ function isPowerOfTwo(n){
   Test.assertEquals(isPowerOfTwo(4096), true)
   Test.assertEquals(isPowerOfTwo(5), false)*/
 ```
+[Invert values](https://www.codewars.com/kata/invert-values/train/javascript)
+```javascript
+function invert(array) {
+  const arr = [];
+    for(let i = 0; i < array.length; i++) {
+      arr.push(-array[i]);
+    }
+   return arr;
+}
+```
