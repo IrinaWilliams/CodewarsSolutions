@@ -1736,6 +1736,7 @@ function invert(array) {
 function balancedNum(number) {
 
   let numArr = number.toString().split('').map((d) => +d);
+  console.log(numArr);
   let sumF = 0,
     sumB = 0;
   if (numArr.length <= 2) return 'Balanced';
@@ -1757,6 +1758,11 @@ function balancedNum(number) {
 
   return (sumF === sumB) ? 'Balanced' : 'Not Balanced';
 }
+   console.log(balancedNum(7)); // "Balanced")
+   console.log(balancedNum(959)); //"Balanced")
+   console.log(balancedNum(13)); // "Balanced")
+   console.log(balancedNum(432)); // "Not Balanced")
+   console.log(balancedNum(424));  // "Balanced")
 
 unction balancedNum(number) {
 
