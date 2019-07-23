@@ -1839,3 +1839,9 @@ const squareSum = n => n.reduce((a, c) => a + (c ** 2));
 //Test.assertEquals(squareSum([1,2]), 5)
 //Test.assertEquals(squareSum([0, 3, 4, 5]), 50)
 ```
+[7 kyu Sum of Array Averages](https://www.codewars.com/kata/sum-of-array-averages/train/javascript)
+```javascript
+let sumAverage = a => Math.floor(a.map(e => e.reduce(sum) / e.length).reduce(sum));
+
+let sum = (a, b) => a + b;
+```
