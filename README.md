@@ -1853,5 +1853,24 @@ function discoverOriginalPrice(discountedPrice, salePercentage){
 ```
 [7 kyu Number of People in the Bus](https://www.codewars.com/kata/number-of-people-in-the-bus/train/javascript)
 ```javascript
+const number = function(busStops){
+  let totalPeople = 0;
+  for (let i = 0; i < busStops.length; i++) {
+    totalPeople += busStops[i][0];
+    totalPeople -= busStops[i][1];
+  }
+  return totalPeople;
+}
 const number = (busStops) => busStops.reduce((sum, [a, b]) => sum + a - b, 0);
+```
+[8 kyu Sum of Multiples](https://www.codewars.com/kata/sum-of-multiples/train/javascript)
+```javascript
+function sumMul(n,m) {
+  if(m <= 0) return 'INVALID';
+  let sum = 0;
+  for(let i = n; i < m; i = i + n) {
+    sum = sum + i;
+  }
+  return sum;
+}
 ```
