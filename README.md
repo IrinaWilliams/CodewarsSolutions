@@ -1776,3 +1776,7 @@ unction balancedNum(number) {
 
 }
 ```
+[8 kyu Expressions Matter](https://www.codewars.com/kata/expressions-matter/train/javascript)
+```javascript
+const expressionMatter = (a, b, c) => Math.max(a + b + c, a * (b + c), (a + b) * c, a * b * c);
+```
