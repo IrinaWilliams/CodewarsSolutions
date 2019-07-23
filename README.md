@@ -1871,6 +1871,6 @@ function sumMul(n,m) {
   for(let i = n; i < m; i = i + n) {
     sum = sum + i;
   }
-  return sum;
+  return sum; 
 }
 ```
