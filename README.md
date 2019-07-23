@@ -1845,3 +1845,9 @@ let sumAverage = a => Math.floor(a.map(e => e.reduce(sum) / e.length).reduce(sum
 
 let sum = (a, b) => a + b;
 ```
+[7 kyu Discover The Original Price](https://www.codewars.com/kata/discover-the-original-price/train/javascript)
+```javascript
+function discoverOriginalPrice(discountedPrice, salePercentage){
+  return +(discountedPrice / (1 - salePercentage / 100)).toFixed(2);
+}
+```
