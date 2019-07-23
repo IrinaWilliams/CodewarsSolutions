@@ -1851,3 +1851,7 @@ function discoverOriginalPrice(discountedPrice, salePercentage){
   return +(discountedPrice / (1 - salePercentage / 100)).toFixed(2);
 }
 ```
+[7 kyu Number of People in the Bus](https://www.codewars.com/kata/number-of-people-in-the-bus/train/javascript)
+```javascript
+const number = (busStops) => busStops.reduce((sum, [a, b]) => sum + a - b, 0);
+```
