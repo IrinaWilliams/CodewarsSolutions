@@ -1874,7 +1874,7 @@ function sumMul(n,m) {
   return sum; 
 }
 ```
-[A wolf in sheep's clothing](https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript)
+[8 kyu A wolf in sheep's clothing](https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript)
 ```javascript
 function warnTheSheep(queue) {
   let c = queue.reverse().indexOf('wolf');
