@@ -1881,3 +1881,13 @@ function warnTheSheep(queue) {
   return c > 0 ? `Oi! Sheep number ${c}! You are about to be eaten by a wolf!` : `Pls go away and stop eating my sheep`;
 }
 ```
+[7 kyu Maximum Multiple](https://www.codewars.com/kata/maximum-multiple/train/javascript)
+```javascript
+function maxMultiple(divisor, bound){
+let res = 0;
+  for(let i = divisor; i <= bound; i += divisor){
+    res = i;
+  }
+  return res;
+}
+```
