@@ -1960,4 +1960,7 @@ let newS = '';
   }
   return newS;
 }
+function removeExclamationMarks(s) {
+  return s.replace(/!/g, '');
+}
 ```
