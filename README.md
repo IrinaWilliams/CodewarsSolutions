@@ -1932,4 +1932,5 @@ const closestMultiple10 = num => {
   let b = a + 10;
   return (num - a < b - num) ? a : b;
 };
+const closestMultiple10 = num => Math.round(num / 10) * 10;
 ```
