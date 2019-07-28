@@ -1967,3 +1967,9 @@ function removeExclamationMarks(s) {
   return s.split('!').join('');
 }
 ```
+[8 kyu Hex to Decimal](https://www.codewars.com/kata/hex-to-decimal/train/javascript)
+```javascript
+function hexToDec(hexString){
+  return parseInt(hexString, 16)
+}
+```
