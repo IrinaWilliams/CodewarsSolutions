@@ -1934,3 +1934,30 @@ const closestMultiple10 = num => {
 };
 const closestMultiple10 = num => Math.round(num / 10) * 10;
 ```
+[6 kyu Valid Braces](https://www.codewars.com/kata/valid-braces/train/javascript)
+```javascript
+function validBraces(braces){
+  const arr = [];
+  for(let i = 0; i < braces.length; i++) {
+
+    if(braces[i] === '(') arr.unshift(')');
+    else if (braces[i] === '{') arr.unshift('}');
+    else if (braces[i] === '[') arr.unshift(']');
+    else if (braces[i] !== arr[0]) return false;
+    else arr.shift();
+  }
+return arr.length === 0;
+}
+```
+[8 kyu Remove exclamation marks](https://www.codewars.com/kata/remove-exclamation-marks/train/javascript)
+```javascript
+function removeExclamationMarks(s) {
+let newS = '';
+  for(let i = 0; i < s.length; i++) {
+    if(s[i] !== '!') {
+    newS += s[i];
+    }
+  }
+  return newS;
+}
+```
