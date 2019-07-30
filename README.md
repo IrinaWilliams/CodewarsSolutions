@@ -1973,3 +1973,7 @@ function hexToDec(hexString){
   return parseInt(hexString, 16)
 }
 ```
+[7 kyu Simple remove duplicates](https://www.codewars.com/kata/simple-remove-duplicates/train/javascript)
+```javascript
+const solve = arr => Array.from(new Set(arr.reverse())).reverse();
+```
