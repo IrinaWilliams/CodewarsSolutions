@@ -1996,3 +1996,9 @@ function solve(arr){
     return a.reverse();
 }
 ```
+[7 kyu So Easy: Charge time calculation](https://www.codewars.com/kata/so-easy-charge-time-calculation/train/javascript)
+```javascript
+function calculateTime(battery,charger){
+  return Math.round(battery / charger * 130) / 100;
+}
+```
