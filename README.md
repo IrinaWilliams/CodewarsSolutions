@@ -1976,4 +1976,14 @@ function hexToDec(hexString){
 [7 kyu Simple remove duplicates](https://www.codewars.com/kata/simple-remove-duplicates/train/javascript)
 ```javascript
 const solve = arr => Array.from(new Set(arr.reverse())).reverse();
+
+function solve(arr){
+ for (let i=0; i<arr.length; i++) {
+    if (arr.indexOf(arr[i],i+1)>0) {
+      arr.splice(i,1);
+      --i;
+    }
+  }
+  return arr;
+}
 ```
