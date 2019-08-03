@@ -2065,3 +2065,19 @@ function going(n) {
     return Math.floor(res * 1e6) / 1e6;
 }
 ```
+[7 kyu Adding Arrays]
+```javascript
+function arrAdder(arr) {
+    let arrRes = [];
+    for(let i = 0; i < arr[0].length; i++) {
+      let int = [];
+        for(let j = 0; j < arr.length; j++) {
+          if(arr[j][i] !== '')
+           int.push(arr[j][i]);
+          }
+         arrRes.push(int.join(""));
+        }
+    return arrRes.join(" ").trim();
+  }
+
+  ```
