@@ -2042,3 +2042,15 @@ function sumOfABeach(beach) {
 const sumOfABeach = beach => (beach.match(/sand|water|fish|sun/ig) || []).length
 
 ```
+[5 kyu Going to zero or to infinity?]
+```javascript
+function going(n) {
+  let a = 1;
+    let b = 1;
+      for(let i=0; i < n-1; i++) {
+        b = b/(n-i);
+        a = a + b;
+      }
+  return Math.floor(a*1000000)/1000000;
+}
+```
