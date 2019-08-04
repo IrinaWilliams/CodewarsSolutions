@@ -2091,3 +2091,9 @@ function arrAdder(arr) {
   return str.trim();
 }
 ```
+[8 kyu Find Nearest square number]
+```javascript
+function nearestSq(n){
+    return Math.round(n**0.5)**2
+}
+```
