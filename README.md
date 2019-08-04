@@ -2097,3 +2097,9 @@ function nearestSq(n){
     return Math.round(n**0.5)**2
 }
 ```
+[8 kyu Closest elevator]
+```javascript
+function elevator(left, right, call){
+  return Math.abs(call - left) < Math.abs(call - right) ? 'left' : 'right';
+}
+```
