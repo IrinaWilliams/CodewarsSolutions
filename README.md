@@ -12,7 +12,7 @@ let countSheep = function (num){
 *https://www.codewars.com/kata/third-angle-of-a-triangle/train/javascript
 ```javascript
 function otherAngle(a, b) {
-  return 180 - ( a + b);
+  return 180 - (a + b);
 }
 ```
 *https://www.codewars.com/kata/youre-a-square/train/javascript
@@ -103,14 +103,14 @@ function simpleMultiplication(number) {
 ```
 *https://www.codewars.com/kata/convert-boolean-values-to-strings-yes-or-no/train/javascript
 ```javascript
-function boolToWord( bool ){
+function boolToWord(bool){
   return bool === true ? 'Yes' : 'No';
 }
 ```
 *https://www.codewars.com/kata/reverse-a-number/train/javascript
 ```javascript
 function reverseNumber(n) {
-   if ( n >= 0 ){
+   if (n >= 0){
    let arr = n.toString().split('').reverse();
     return +(arr.join(''))}
     else {
@@ -250,7 +250,7 @@ function numberToString(num) {
 ```javascript
 function first(arr, n =1) {
   let array = [];
-    if ( n > arr.length) return arr;
+    if (n > arr.length) return arr;
       for (let i=0; i < n; i++){
         array.push(arr[i]);
       }
@@ -410,7 +410,7 @@ function solve(arr){
     for(let i = 0; i < arr.length; i++){
       let count = 0;
         for(let j = 0; j < arr[i].length; j++){
-          if( j === alp.indexOf(arr[i][j].toUpperCase()) ){
+          if(j === alp.indexOf(arr[i][j].toUpperCase())){
             count++;
           }
         }
@@ -610,7 +610,7 @@ function getAverage(marks){
   return sum - min - max;
  }
  function sumArray(array) {
- if( !array || array.length < 2) return 0;
+ if(!array || array.length < 2) return 0;
  let min = array[0], max = array[0], sum = 0;
  
  array.forEach(el => {
@@ -858,17 +858,17 @@ function greet(language) {
 ```
 [Welcome to the City](https://www.codewars.com/kata/welcome-to-the-city/train/javascript) /*object*/
  ```javascript
- function sayHello( name, city, state ) {
+ function sayHello(name, city, state) {
  let fullName = '';
    for(let i = 0; i < name.length; i++) {
      fullName = fullName + ' ' + name[i];
    }
  return `Hello,${fullName}! Welcome to ${city}, ${state}!`;
  }
- function sayHello( name, city, state ) {
+ function sayHello(name, city, state) {
  return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
  }
- const sayHello = ( name, city, state ) => `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+ const sayHello = (name, city, state) => `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
  ```
  [Get Nth Even Number](https://www.codewars.com/kata/get-nth-even-number/train/javascript) 
 ```javascript
@@ -950,7 +950,7 @@ const maxTriSum = numbers => {
   return a+b+c
 }
 function maxTriSum(numbers){
-  return numbers.filter((el, i )=> i === numbers.lastIndexOf(el))
+  return numbers.filter((el, i)=> i === numbers.lastIndexOf(el))
   .sort((a, b) => a - b).slice(-3).reduce((a, b) => a + b, 0);
 }
 ```
@@ -1062,7 +1062,7 @@ function paperwork(n, m) {
  [Sum of positive](https://www.codewars.com/kata/sum-of-positive/train/javascript)
 ```javascript
  function positiveSum(arr) {
-   return arr.reduce((a, b) => {return (b > 0 ) ? (a + b) : (a + 0)}, 0);
+   return arr.reduce((a, b) => {return (b > 0) ? (a + b) : (a + 0)}, 0);
  }
 ```
 [Removing Elements](https://www.codewars.com/kata/removing-elements/train/javascript)
@@ -1160,7 +1160,7 @@ function flattenAndSort(array) {
 function flattenAndSort(array) {
   let newArr = [];
     for (let i = 0; i < array.length; i++) {
-      for (let j = 0; j < array[i].length; j++ ) {
+      for (let j = 0; j < array[i].length; j++) {
          newArr.push(array[i][j]);   
       }
     }   
@@ -1315,7 +1315,7 @@ function squareOrSquareRoot(array) {
 const newArr = [];
   for(let i = 0; i < array.length; i++) {
     let j = array[i] ** 0.5; 
-      if(Number.isInteger(j) ) {
+      if(Number.isInteger(j)) {
         newArr.push(j);
       } else {
         newArr.push(array[i] ** 2);
@@ -1731,7 +1731,7 @@ function invert(array) {
    return arr;
 }
 ```
-[Balanced Number (Special Numbers Series #1 )](https://www.codewars.com/kata/balanced-number-special-numbers-series-number-1/train/javascript)
+[Balanced Number (Special Numbers Series #1)](https://www.codewars.com/kata/balanced-number-special-numbers-series-number-1/train/javascript)
 ```javascript
 function balancedNum(number) {
 
@@ -2101,5 +2101,23 @@ function nearestSq(n){
 ```javascript
 function elevator(left, right, call){
   return Math.abs(call - left) < Math.abs(call - right) ? 'left' : 'right';
+}
+
+function elevator(left, right, call) {
+  if (call === 0)
+    if (left < right)
+      return "left";
+    else
+      return "right";
+  else if (call === 1)
+    if (left === call && right !== call)
+      return "left";
+    else
+      return "right";
+  else if (call === 2)
+    if (left > right)
+      return "left";
+    else
+      return "right";
 }
 ```
