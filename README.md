@@ -2121,3 +2121,17 @@ function elevator(left, right, call) {
       return "right";
 }
 ```
+[8 kyu Is there a vowel in there?]
+```javascript
+function isVow(a) {
+  const res = [];
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] === 97 || a[i] === 101 || a[i] === 105 || a[i] === 111 || a[i] === 117) {
+        res.push(String.fromCharCode(a[i]));
+      } else {
+     res.push(a[i]);
+    }
+  }
+ return res;
+}
+```
