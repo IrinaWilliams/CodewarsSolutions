@@ -2178,3 +2178,13 @@ unction defineSuit(card) {
 }
 if (card.includes('♣')) return 'clubs';
 ```
+[8 kyu Are You Playing Banjo?]
+```javascript
+function areYouPlayingBanjo(name) {
+  if(name[0] === 'R' || name[0] === 'r') {
+  return name + " plays banjo";
+  } else {
+  return name + " does not play banjo";
+  }
+}
+```
