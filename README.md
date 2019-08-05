@@ -2166,4 +2166,15 @@ function defineSuit(card) {
     if(card[i] === '♥') return 'hearts';
   }
 }
+
+unction defineSuit(card) {
+  const s = {
+    "♣": "clubs",
+    "♠": "spades",
+    "♦": "diamonds",
+    "♥": "hearts"
+  }
+  return s[card.charAt(card.length - 1)]
+}
+if (card.includes('♣')) return 'clubs';
 ```
