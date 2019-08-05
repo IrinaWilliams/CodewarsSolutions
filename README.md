@@ -2188,3 +2188,7 @@ function areYouPlayingBanjo(name) {
   }
 }
 ```
+[8 kyu Beginner - Reduce but Grow]
+```javascript
+const grow = x => x.reduce((acc, cur) => acc * cur);
+```
