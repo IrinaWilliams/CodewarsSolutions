@@ -2134,4 +2134,7 @@ function isVow(a) {
   }
  return res;
 }
+
+isVow = a => a.map(e => e == 97 ? 'a' : e == 101 ? 'e' : e == 105 ? 'i' : e == 111 ? 'o' : e == 117 ? 'u' : e);
+
 ```
