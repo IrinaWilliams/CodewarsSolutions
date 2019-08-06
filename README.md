@@ -2213,4 +2213,7 @@
          }
         return arr;
        }
+       function fixTheMeerkat(arr) {
+         return arr.reverse();
+       }
         ```
