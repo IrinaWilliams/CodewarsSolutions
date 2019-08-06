@@ -2206,11 +2206,9 @@
     [8 kyu My head is at the wrong end!]
     ```javascript
        function fixTheMeerkat(arr) {
-         for(let i = 0; i < arr.length; i++) {
            let temp = arr[0];
            arr[0] = arr[2];
            arr[2] = temp;
-         }
         return arr;
        }
        function fixTheMeerkat(arr) {
