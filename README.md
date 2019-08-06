@@ -2201,5 +2201,5 @@
     [8 kyu Beginner - Reduce but Grow]
     ```javascript
    const goals = (a,b,c) => a + b + c;
-
+   const goals = (...goalsArray) => goalsArray.reduce((a, b) => a + b);
     ```
