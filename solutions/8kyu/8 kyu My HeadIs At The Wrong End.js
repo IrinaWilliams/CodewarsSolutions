@@ -1,4 +1,4 @@
-//https://www.codewars.com/kata/my-head-is-at-the-wrong-end/train/javascript
+https://www.codewars.com/kata/my-head-is-at-the-wrong-end/train/javascript
 
 function fixTheMeerkat(arr) {
     let temp = arr[0];
