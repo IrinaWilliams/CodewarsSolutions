@@ -2093,32 +2093,11 @@
    ```
    [8 kyu Find Nearest square number]
    ```javascript
-   function nearestSq(n){
-       return Math.round(n**0.5)**2
-   }
+   
    ```
-   [8 kyu Closest elevator]
-   ```javascript
-   function elevator(left, right, call){
-     return Math.abs(call - left) < Math.abs(call - right) ? 'left' : 'right';
-   }
+   
 
-   function elevator(left, right, call) {
-     if (call === 0)
-       if (left < right)
-         return "left";
-       else
-         return "right";
-     else if (call === 1)
-       if (left === call && right !== call)
-         return "left";
-       else
-         return "right";
-     else if (call === 2)
-       if (left > right)
-         return "left";
-       else
-         return "right";
+  
    }
    ```
    [8 kyu Is there a vowel in there?]
@@ -2156,28 +2135,7 @@
    }
    ```
 
-   [8 kyu Define a card suit]
-   ```javascript
-   function defineSuit(card) {
-     for(let i = 0; i < card.length; i++) {
-       if(card[i] === '♣') return 'clubs';
-       if(card[i] === '♠') return 'spades';
-       if(card[i] === '♦') return 'diamonds';
-       if(card[i] === '♥') return 'hearts';
-     }
-   }
-
-   unction defineSuit(card) {
-     const s = {
-       "♣": "clubs",
-       "♠": "spades",
-       "♦": "diamonds",
-       "♥": "hearts"
-     }
-     return s[card.charAt(card.length - 1)]
-   }
-   if (card.includes('♣')) return 'clubs';
-   ```
+  
    [8 kyu Are You Playing Banjo?]
    ```javascript
    function areYouPlayingBanjo(name) {
@@ -2194,7 +2152,7 @@
 
    let sum = x.reduce(function (a, b) {return a * b;});
      return sum
-   }
+   } 
    ```
  [Grasshopper - Messi goals function]
   ```
