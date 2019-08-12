@@ -2018,30 +2018,7 @@
      return res;
    }
    ```
-   [7 kyu Sum of a Beach]
-   ```javascript
-   function sumOfABeach(beach) {
-     let reg = /sand|water|fish|sun/gi;
-     let arr = beach.match(reg);
-     return !arr ? 0 : arr.length;
-   }
-
-   function sumOfABeach(beach) {
-       let result = 0;
-       beach = beach.toLowerCase();
-       let elements = ["sand", "water", "fish", "sun"];
-       for (let i = 0; i < 4; i++) {
-           while (beach.includes(elements[i])) {
-               beach = beach.replace(elements[i], '');
-               result++;
-           }
-       }
-       return result;
-   }
-
-   const sumOfABeach = beach => (beach.match(/sand|water|fish|sun/ig) || []).length
-
-   ```
+   
    [5 kyu Going to zero or to infinity?]
    ```javascript
    function going(n) {
@@ -2065,112 +2042,7 @@
        return Math.floor(res * 1e6) / 1e6;
    }
    ```
-   [7 kyu Adding Arrays]
-   ```javascript
-   function arrAdder(arr) {
-       let arrRes = [];
-       for(let i = 0; i < arr[0].length; i++) {
-         let int = [];
-           for(let j = 0; j < arr.length; j++) {
-             if(arr[j][i] !== '')
-              int.push(arr[j][i]);
-             }
-            arrRes.push(int.join(""));
-           }
-       return arrRes.join(" ").trim();
-     }
-
-   function arrAdder(arr) {
-     let str = "";
-     for(let i = 0; i < arr[0].length; i++){
-       for(let j = 0; j < arr.length; j++){
-         str += arr[j][i];
-       }
-       str += " ";
-     }
-     return str.trim();
-   }
-   ```
-   [8 kyu Find Nearest square number]
-   ```javascript
-   
-   ```
    
 
   
-   }
-   ```
-   [8 kyu Is there a vowel in there?]
-   ```javascript
-   function isVow(a) {
-     const res = [];
-       for (let i = 0; i < a.length; i++) {
-         if (a[i] === 97 || a[i] === 101 || a[i] === 105 || a[i] === 111 || a[i] === 117) {
-           res.push(String.fromCharCode(a[i]));
-         } else {
-        res.push(a[i]);
-       }
-     }
-    return res;
-   }
-
-   isVow = a => a.map(e => e == 97 ? 'a' : e == 101 ? 'e' : e == 105 ? 'i' : e == 111 ? 'o' : e == 117 ? 'u' : e);
-
-   ```
-
-   [8 kyu A Strange Trip to the Market]
-   ```javascript
-   function isLockNessMonster(s) {
-    let reg = /tree fiddy|3[.]50/gi;
-    let arr = s.match(reg);
-    return !arr ? 0 : arr.length;
-   }
-
-   function isLockNessMonster(s) {
-     return s.includes("tree fiddy") || s.includes("3.50");
-   }
-
-   function isLockNessMonster(s) {
-     return (/tree fiddy|3.50/).test(s);
-   }
-   ```
-
-  
-   [8 kyu Are You Playing Banjo?]
-   ```javascript
-   function areYouPlayingBanjo(name) {
-     if(name[0] === 'R' || name[0] === 'r') {
-     return name + " plays banjo";
-     } else {
-     return name + " does not play banjo";
-     }
-   }
-   ```
-   [8 kyu Beginner - Reduce but Grow]
-   ```javascript
-   const grow = x => x.reduce((acc, cur) => acc * cur);
-
-   let sum = x.reduce(function (a, b) {return a * b;});
-     return sum
-   } 
-   ```
- [Grasshopper - Messi goals function]
-  ```
-    [8 kyu Beginner - Reduce but Grow]
-    ```javascript
-   const goals = (a,b,c) => a + b + c;
-   const goals = (...goalsArray) => goalsArray.reduce((a, b) => a + b);
-    ```
-    [8 kyu My head is at the wrong end!]
-    ```javascript
-       function fixTheMeerkat(arr) {
-           let temp = arr[0];
-           arr[0] = arr[2];
-           arr[2] = temp;
-        return arr;
-       }
-       function fixTheMeerkat(arr) {
-         return arr.reverse();
-       }
-       const fixTheMeerkat = ([tail, body, head]) => [head, body, tail]
-        ```
+   
