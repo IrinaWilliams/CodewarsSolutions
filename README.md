@@ -1973,51 +1973,8 @@
      return parseInt(hexString, 16)
    }
    ```
-   [7 kyu Simple remove duplicates](https://www.codewars.com/kata/simple-remove-duplicates/train/javascript)
-   ```javascript
-   const solve = arr => Array.from(new Set(arr.reverse())).reverse();
-
-   function solve(arr){
-    for (let i=0; i<arr.length; i++) {
-       if (arr.indexOf(arr[i],i+1)>0) {
-         arr.splice(i,1);
-         --i;
-       }
-     }
-     return arr;
-   }
-
-   function solve(arr){
-     let a=[];
-     let ar=arr.reverse();
-       for (let i=0; i<ar.length; ++i)
-         if (a.indexOf(ar[i])==-1)
-           a.push(ar[i]);
-       return a.reverse();
-   }
-   ```
-   [7 kyu So Easy: Charge time calculation](https://www.codewars.com/kata/so-easy-charge-time-calculation/train/javascript)
-   ```javascript
-   function calculateTime(battery,charger){
-     return Math.round(battery / charger * 130) / 100;
-   }
-   ```
-   [7 kyu Array Leaders (Array Series #3)]
-   ```javascript
-   const arrayLeaders = n => {
-       let res = [];
-       for (let i = 0; i < n.length; i++) {
-         let sum = 0;
-         for (let j = i + 1; j < n.length; j++) {
-           sum += n[j];
-         }
-         if (n[i] > sum) {
-           res.push(n[i]);
-         }
-       }
-     return res;
-   }
-   ```
+   
+  
    
    [5 kyu Going to zero or to infinity?]
    ```javascript
