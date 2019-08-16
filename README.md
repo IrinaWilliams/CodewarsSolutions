@@ -1903,37 +1903,8 @@
      return sum === n ? "STRONG!!!!" : "Not Strong !!" ;
    }
    ```
-   [7 kyu Sort Out The Men From Boys](https://www.codewars.com/kata/sort-out-the-men-from-boys-1/train/javascript)
-   ```javascript
-   function menFromBoys(arr){
-   arr = Array.from(new Set(arr));
-    let men = [];
-     let boys =[];
-
-      for(let i = 0; i < arr.length; i++) {
-        if(arr[i] % 2 === 0) {
-          men.push(arr[i]);
-
-        }
-        if(arr[i] % 2) {
-          boys.push(arr[i]);
-
-        }
-         men.sort((a, b) => a - b);
-         boys.sort((a, b) => b - a);
-      }
-      return [...men, ...boys];
-    }
-   ```
-   [7 kyu Return the closest number multiple of 10](https://www.codewars.com/kata/return-the-closest-number-multiple-of-10/train/javascript)
-   ```javascript
-   const closestMultiple10 = num => {
-     let a = Math.floor(num/10) * 10;
-     let b = a + 10;
-     return (num - a < b - num) ? a : b;
-   };
-   const closestMultiple10 = num => Math.round(num / 10) * 10;
-   ```
+ 
+  
    [6 kyu Valid Braces](https://www.codewars.com/kata/valid-braces/train/javascript)
    ```javascript
    function validBraces(braces){
@@ -1949,30 +1920,8 @@
    return arr.length === 0;
    }
    ```
-   [8 kyu Remove exclamation marks](https://www.codewars.com/kata/remove-exclamation-marks/train/javascript)
-   ```javascript
-   function removeExclamationMarks(s) {
-   let newS = '';
-     for(let i = 0; i < s.length; i++) {
-       if(s[i] !== '!') {
-       newS += s[i];
-       }
-     }
-     return newS;
-   }
-   function removeExclamationMarks(s) {
-     return s.replace(/!/g, '');
-   }
-   function removeExclamationMarks(s) {
-     return s.split('!').join('');
-   }
-   ```
-   [8 kyu Hex to Decimal](https://www.codewars.com/kata/hex-to-decimal/train/javascript)
-   ```javascript
-   function hexToDec(hexString){
-     return parseInt(hexString, 16)
-   }
-   ```
+ 
+   
    
   
    
