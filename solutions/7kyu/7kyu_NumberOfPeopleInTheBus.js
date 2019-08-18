@@ -10,6 +10,4 @@ https://www.codewars.com/kata/number-of-people-in-the-bus/train/javascript
    }
 
    const number = (busStops) => busStops.reduce((sum, [a, b]) => sum + a - b, 0);
-
-   7 kyu Number of People in the Bus
    
