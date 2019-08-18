@@ -1874,35 +1874,7 @@
      return sum;
    }
    ```
-   [8 kyu A wolf in sheep's clothing](https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript)
-   ```javascript
-   function warnTheSheep(queue) {
-     let c = queue.reverse().indexOf('wolf');
-     return c > 0 ? `Oi! Sheep number ${c}! You are about to be eaten by a wolf!` : `Pls go away and stop eating my sheep`;
-   }
-   ```
-   [7 kyu Maximum Multiple](https://www.codewars.com/kata/maximum-multiple/train/javascript)
-   ```javascript
-   function maxMultiple(divisor, bound){
-   let res = 0;
-     for(let i = divisor; i <= bound; i += divisor){
-       res = i;
-     }
-     return res;
-   }
-   ```
-   [7 kyu STRONGN Strong Number](https://www.codewars.com/kata/strongn-strong-number-special-numbers-series-number-2/train/javascript)
-   ```javascript
-   function strong(n) {
-     let sum = 0;
-     let str = n.toString().split('').forEach(el => {
-       let fact = 1;
-         for(let i = 1; i <= el; i++) fact *= i;
-         sum += fact;
-       });
-     return sum === n ? "STRONG!!!!" : "Not Strong !!" ;
-   }
-   ```
+  
  
   
    [6 kyu Valid Braces](https://www.codewars.com/kata/valid-braces/train/javascript)
