@@ -1309,21 +1309,7 @@
     let sum = Object.values(staff).map(el => obj[el]).reduce((a, b) => a + b);
    }
    ```
-   [To square(root) or not to square(root)](https://www.codewars.com/kata/to-square-root-or-not-to-square-root/train/javascript) /*Number.isInteger(j)*/
-   ```javascript
-   function squareOrSquareRoot(array) {
-   const newArr = [];
-     for(let i = 0; i < array.length; i++) {
-       let j = array[i] ** 0.5;
-         if(Number.isInteger(j)) {
-           newArr.push(j);
-         } else {
-           newArr.push(array[i] ** 2);
-         }
-       }
-     return newArr;
-   }
-   ```
+  
    [Shortest Word](https://www.codewars.com/kata/shortest-word/train/javascript)
    ```javascript
    function findShort(s){
@@ -1341,116 +1327,10 @@
      return shortW.length;
    }
    ```
-   [Player Contact Manager](https://www.codewars.com/kata/player-contact-manager/train/javascript)
-   ```javascript
-   /*You are the Dungeon Master for a public DnD game at your local comic shop and recently you've had some trouble keeping your players' info neat and organized so you've decided to write a bit of code to help keep them sorted!
-
-     The goal of this code is to create an array of objects that stores a player's name and contact number from a given string.
-
-     The method should return an empty array if the argument passed is an empty string or nil/None/null.*/
-
-   function playerManager(players) {
-   if(players === null || players.length === 0) return [];
-   let res = [];
-     let arr = players.split(', ');
-       for(let i = 0; i < arr.length; i += 2) {
-         let obj = {
-           player: arr[i],
-           contact: +arr[i + 1]
-         };
-           res.push(obj);
-       }
-     return res;
-   }
-   /*console.log(playerManager("John Doe, 8167238327, Jane Doe, 8163723827"));
-   [{player: "John Doe", contact: 8167238327}, {player: "Jane Doe", contact: 8163723827}]
-   */
-   ```
-   [Who's Online](https://www.codewars.com/kata/whos-online/train/javascript)
-   ```javascript
-   /*You have a group chat application, but who is online!?
-
-     You want to show your users which of their friends are online and available to chat!
-
-     Given an input of an array of objects containing usernames, status and time since last activity (in mins), create a function to work out who is online, offline and away.
-
-     If someone is online but their lastActivity was more than 10 minutes ago they are to be considered away.*/
-
-   const whosOnline = (friends) => {
-
-     let obj = {};
-       for (let i = 0; i < friends.length; i++) {
-         if (friends[i].status == 'online' && friends[i].lastActivity <= 10) {
-           if (!obj.online) {
-             obj.online = [];
-           };
-           obj.online.push(friends[i].username);
-         };
-         if (friends[i].status == 'offline') {
-           if (!obj.offline) {
-             obj.offline = [];
-           };
-           obj.offline.push(friends[i].username);
-         };
-         if (friends[i].status == 'online' && friends[i].lastActivity > 10) {
-           if (!obj.away) {
-             obj.away = [];
-           };
-           obj.away.push(friends[i].username);
-         };
-       }
-     return obj;
-   }
-   /*
-   it('Example test one of each', function () {
-       friends = [{
-         username: 'David',
-         status: 'online',
-         lastActivity: 10
-       }, {
-         username: 'Lucy',
-         status: 'offline',
-         lastActivity: 22
-       }, {
-         username: 'Bob',
-         status: 'online',
-         lastActivity: 104
-       }]
-
-   Test Passed: Value deep equals { offline: [ 'Lucy' ], away: [ 'Bob' ] }*/
-   ```
-   [Difference Of Squares](https://www.codewars.com/kata/difference-of-squares/train/javascript)
-   ```javascript
-   /*Find the difference between the sum of the squares of the first n natural numbers (1 <= n <= 100) and the square of their sum.
-     Example
-     For example, when n = 10:
-     The square of the sum of the numbers is:
-     (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10)2 = 552 = 3025
-     The sum of the squares of the numbers is:
-     12 + 22 + 32 + 42 + 52 + 62 + 72 + 82 + 92 + 102 = 385
-     Hence the difference between square of the sum of the first ten natural numbers and the sum of the squares of those numbes is: 3025 - 385 = 2640*/
-
-   function differenceOfSquares(n){
-   let sum = 0;
-   let sum2 = 0;
-   for(let i = 0; i <= n; i++) {
-       sum += i;
-     let j = i ** 2;
-       sum2 += j;
-     }
-    return sum ** 2 - sum2;
-   }
-   console.log(differenceOfSquares(100)); // 25164150
-   ```
-   [Century From Year](https://www.codewars.com/kata/century-from-year/train/javascript) /*Math.ceil*/
-   ```javascript
-   /*The first century spans from the year 1 up to and including the year 100, The second - from the year 101 up to and including the year 200, etc.*/
-   /*const century = year => Math.ceil(year/100);
-   centuryFromYear(1705)  returns (18)
-   centuryFromYear(1900)  returns (19)
-   centuryFromYear(1601)  returns (17)
-   centuryFromYear(2000)  returns (20)*/
-   ```
+   
+   
+  
+   
    [Discover The Original Price](https://www.codewars.com/kata/discover-the-original-price/train/javascript)
    ```javascript
    function discoverOriginalPrice(discountedPrice, salePer){
