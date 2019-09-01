@@ -35,6 +35,10 @@ function productArray(numb){
       }
     return arr;
   }
+
+  const productArray = n => n.map(x => n.reduce((a,b) => a * b) / x);
+
+  
   /*describe("Basic Tests",_=>{
   Test.assertSimilar(productArray([12,20]), [20,12]);
   Test.assertSimilar(productArray([12,20]), [20,12]);
