@@ -1265,18 +1265,6 @@
    }
    ```
    
-   [Last](https://www.codewars.com/kata/last/train/javascript)
-   ```javascript
-   function last(...list){
-     let  str = list.join();
-       if(str.includes(',')) str = str.split(',');
-     return !isNaN(+str[str.length-1]) ? +str[str.length-1] : str[str.length-1];
-   }
-   function last(list){
-     var last = arguments[arguments.length - 1];
-     return last[last.length - 1] || last;
-   }
-   ```
    [The Office II - Boredom Score](https://www.codewars.com/kata/the-office-ii-boredom-score/train/javascript)
    ```javascript
    function boredom(staff){
