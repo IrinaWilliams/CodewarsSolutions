@@ -1264,21 +1264,7 @@
      return numbers.filter(n => n % divisor === 0)
    }
    ```
-   [The Office III - Broken Photocopier](https://www.codewars.com/kata/the-office-iii-broken-photocopier/train/javascript) /*replace(regex)*/
-   ```javascript
-   function broken(x){
-     return x.replace(/[01]/g, (a) => {
-     return a === '0' ? '1' : '0';
-     })
-   }
-   function broken(x){
-     let res = '';
-       for(let i = 0; i < x.length; i++) {
-         res += x[i] === '0' ? '1' : '0';
-       }
-     return res;
-   }
-   ```
+   
    [Last](https://www.codewars.com/kata/last/train/javascript)
    ```javascript
    function last(...list){
