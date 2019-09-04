@@ -1249,43 +1249,4 @@
      return (a * b);
    }
    ```
-   [Find numbers which are divisible by given number](https://www.codewars.com/kata/find-numbers-which-are-divisible-by-given-number/train/javascript)
-   ```javascript
-   function divisibleBy(n, d){
-   const res = [];
-     for(let i = 0; i < n.length; i++) {
-       if(n[i] % d === 0) {
-         res.push(n[i]);
-       }
-     }
-     return res;
-   }
-   function divisibleBy(numbers, divisor) {
-     return numbers.filter(n => n % divisor === 0)
-   }
-   ```
    
-   [The Office II - Boredom Score](https://www.codewars.com/kata/the-office-ii-boredom-score/train/javascript)
-   ```javascript
-   function boredom(staff){
-    let dep = {
-       'accounts': 1,
-       'finance': 2,
-       'canteen': 10,
-       'regulation': 3,
-       'trading': 6,
-       'change': 6,
-       'IS': 8,
-       'retail': 5,
-       'cleaning': 4,
-       'pissing about': 25
-     }
-    let sum = Object.values(staff).map(el => obj[el]).reduce((a, b) => a + b);
-   }
-   ```
- 
-   
-   
-  
-   
-  
