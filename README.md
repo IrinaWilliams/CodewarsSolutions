@@ -1283,34 +1283,9 @@
     let sum = Object.values(staff).map(el => obj[el]).reduce((a, b) => a + b);
    }
    ```
-  
-   [Shortest Word](https://www.codewars.com/kata/shortest-word/train/javascript)
-   ```javascript
-   function findShort(s){
-   let shortesWord = s.split(' ').sort((a, b) => a.length - b.length);
-    return shortesWord[0].length;
-   }
-   function findShort(s){
-     let arr = s.split(' ');
-     let shortW = arr[0];
-       for(let i = 0; i < arr.length; i++) {
-         if(arr[i].length < shortW.length) {
-           shortW = arr[i];
-         }
-       }
-     return shortW.length;
-   }
-   ```
+ 
    
    
   
    
-   [Discover The Original Price](https://www.codewars.com/kata/discover-the-original-price/train/javascript)
-   ```javascript
-   function discoverOriginalPrice(discountedPrice, salePer){
-    let restPer = 100 - salePer;
-    let totalPrice = (discountedPrice / restPer) * 100;
-    return +totalPrice.toFixed(2);
-   }
-   ```
   
