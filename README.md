@@ -1230,12 +1230,5 @@
      return sum;
    }
    ```
-  
-   
-   [Multiply](https://www.codewars.com/kata/multiply/train/javascript)
-   ```javascript
-   function multiply(a, b){
-     return (a * b);
-   }
-   ```
+
    
