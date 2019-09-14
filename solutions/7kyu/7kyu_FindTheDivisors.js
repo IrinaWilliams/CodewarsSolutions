@@ -20,13 +20,13 @@ let res = [];
         return `${integer} is prime`;
       }
   return res;
-};
+}
 /*new solution*/
 function divisors(integer) {
-  const res = []
+  const res = [];
   for (let i = 2; i <= Math.floor(integer / 2); ++i) if (integer % i == 0) res.push(i);
-  return res.length ? res : integer + ' is prime'
-};
+  return res.length ? res : integer + ' is prime';
+}
 Test.assertDeepEquals(divisors(15), [3, 5]);
 Test.assertDeepEquals(divisors(12), [2, 3, 4, 6]);
 Test.assertDeepEquals(divisors(13), "13 is prime");
