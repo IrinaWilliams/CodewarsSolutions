@@ -23,6 +23,11 @@ function minValue(values){
     return +[...new Set(res)].join('');
 }
 
+function minValue(values){
+    let arr = Array.from(new Set(values))
+    return parseInt(arr.sort().join(''))
+  }
+
 describe("Basic tests",_=>{
     Test.assertEquals(minValue([1, 3, 1]), 13);
     Test.assertEquals(minValue([4, 7, 5, 7]), 457);
