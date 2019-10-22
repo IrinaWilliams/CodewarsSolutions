@@ -8,6 +8,6 @@ const twoSum = (nums, target) => {
       map[nums[i]] = i;
     }
     return null;
-  };
+};
     
     
