@@ -21,28 +21,11 @@ https://www.codewars.com/kata/cat-years-dog-years-2/train/javascript
 // +9 dog years for second year
 // +5 dog years for each year after that
 
-const ownedCatAndDog = function(catYears, dogYears) {
-    if (catYears <= 15) {
-      catYears = 1;
-    } else {
-      if ((catYears - 15) <= 9) {
-        catYears = 2;
-      } else {
-        catYears = parseInt(((catYears - 24) / 4) + 2);
-      }
-    }
-  
-    if (dogYears <= 15) {
-      dogYears = 1;
-    } else {
-      if ((dogYears - 15) <= 9) {
-        dogYears = 2;
-      } else {
-        dogYears = parseInt(((dogYears - 24) / 5) + 2);
-      }
-    }
-    return [catYears, dogYears];
-  }
+let ownedCatAndDog = (cat,dog) => 
+[cat < 15 ? 0 : cat < 24 ? 1 : (cat - 16) / 4 | 0,
+dog < 15 ? 0 : dog < 24 ? 1 : (dog - 14) / 5 | 0];
+console.log(ownedCatAndDog(56, 64));
+
 //   describe("Example Tests", function() {
 
 //     it("one", function() {
