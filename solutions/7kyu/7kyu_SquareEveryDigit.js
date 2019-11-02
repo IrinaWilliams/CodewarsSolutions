@@ -13,4 +13,9 @@ function squareDigits(num){
     return +str;
   }
 
+  function squareDigits(num){
+    return +num.toString().split('').map(i => i*i).join('');
+  }
+  console.log(squareDigits(9119));
+
 //   Test.assertEquals(squareDigits(9119), 811181);
