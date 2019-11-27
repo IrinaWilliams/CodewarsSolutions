@@ -1,4 +1,5 @@
 //https://www.codewars.com/kata/sums-of-parts/train/javascript
+//https://stackoverflow.com/questions/56739270/sum-of-parts-of-an-array-javascript
 
 // Let us consider this example (array written in general format):
 
