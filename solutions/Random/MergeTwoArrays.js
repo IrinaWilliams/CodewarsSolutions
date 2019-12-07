@@ -26,3 +26,25 @@ for(let i = 0; i < arr2.length; i++){
   return newArr;
 } 
 console.log(mergeArr(arr, arr2));
+
+//Merge two arrays and sort
+const arr = [1, 2, 4, 6, 8];
+const arr2 = [2, 3, 4, 5];
+
+function mergeArr(arr, arr2){
+let temp;
+  for(let i = 0; i < arr2.length; i++){
+    arr.push(arr2[i]);
+  }
+  for(let i = 0; i < arr.length; i++){
+    for(let j = i + 1; j < arr.length; j++){
+      if(arr[i] > arr[j]){
+        temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
+  return arr;
+}
+console.log(mergeArr(arr, arr2));
